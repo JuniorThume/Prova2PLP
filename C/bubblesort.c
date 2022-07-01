@@ -9,12 +9,8 @@ int main(){
     time_t t;
 
     srand((unsigned) time(&t));
-
-    printf("Numero de elementos: 10000 ");
-
+    
     n= 10000;   
-
-    printf("Sorteando numeros ");
 
     for(i=0; i < n; i++){
         vet[i]= rand() % 1000;
