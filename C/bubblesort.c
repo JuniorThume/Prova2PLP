@@ -4,7 +4,7 @@
 
 int main(){
     
-    int vet[10000], y, n, aux;
+    int vet[10000], n, aux, i, j;
 
     time_t t;
 
@@ -16,22 +16,22 @@ int main(){
 
     printf("Sorteando numeros ");
 
-    for(int i = 0; i < n; i++){
+    for(i=0; i < n; i++){
         vet[i]= rand() % 1000;
         
     }
 
-    for(int i = 0; i < n - 1; i++){       
+    for(i=0; i < n - 1; i++){       
 
-        for(y = 0; y < n - i - 1; y++){          
+        for(j=0; j < n - i - 1; j++){          
 
-            if(vet[y] > vet[y + 1]){               
+            if(vet[j] > vet[j+1]){               
 
-                aux = vet[y];
+                aux = vet[j];
 
-                vet[y] = vet[y + 1];
+                vet[j] = vet[j+1];
 
-                vet[y + 1] = aux;
+                vet[j+1] = aux;
 
             }
 
@@ -41,7 +41,7 @@ int main(){
 
     printf("Vetor após bubble sort: ");
 
-    for(int i = 0; i < n; i++){
+    for(i=0; i < n; i++){
 
         printf("%d  ", vet[i]);
 
