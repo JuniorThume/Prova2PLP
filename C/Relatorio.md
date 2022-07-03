@@ -1,1 +1,1 @@
-# Léo num era gay?
+# Juninho não era gay?
