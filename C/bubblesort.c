@@ -25,9 +25,9 @@ int bubbleSort(FILE* arq, int qtd){
         }
     }
     t = clock()-t;
+   
+    fprintf(arq,"Tempo de execução %d execução = %lf \n",qtd,(((double)t)/(CLOCKS_PER_SEC/1000))); // Milissegundos
     
-    fprintf(arq,"Tempo de execução %d execução = %lf \n",qtd,(((double)t)/(CLOCKS_PER_SEC/1000)));
-
     return (((double)t)/(CLOCKS_PER_SEC/1000));
 }
 
@@ -42,10 +42,12 @@ int main(){
     for(i=0; i<1000 ; i++){
         tempo=bubbleSort(arq,i);
         tempoMedio = tempoMedio+tempo;
-    }
         
-    tempoMedio = tempoMedio/1000;
+    }
+    printf("Media das execucoes = %lf\n",tempoMedio);    
+    tempoMedio = tempoMedio/1000.0;
     fprintf(arq,"Media das execuções = %lf",tempoMedio);
+    
     fclose(arq);
     
     return 0;
