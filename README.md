@@ -1,6 +1,6 @@
 # Prova2PLP :thumbsup:
 
-![Meme]([http://developer.r-project.org/Logo/Rlogo-5.png](https://conteudo.imguol.com.br/c/noticias/df/2022/02/17/ti-da-depressao-meme-1645104317374_v2_750x421.jpg))
+![Meme](https://conteudo.imguol.com.br/c/noticias/df/2022/02/17/ti-da-depressao-meme-1645104317374_v2_750x421.jpg)
 
 ## CheckList
 
