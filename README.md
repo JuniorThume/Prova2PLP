@@ -1,6 +1,6 @@
 # Prova2PLP :thumbsup:
 
-![Meme](https://conteudo.imguol.com.br/c/noticias/df/2022/02/17/ti-da-depressao-meme-1645104317374_v2_750x421.jpg)
+![Meme](https://br.ifunny.co/picture/kkkkkkkkkkkkk-passel-em-medicinal-passei-em-ciencia-da-computacao-P0RcNAgf9)
 
 ## CheckList
 
