@@ -1,6 +1,6 @@
 # Prova2PLP
 
-##CheckList
+## CheckList
 
   - Fazer bubblesort
     - [x] C
@@ -13,21 +13,21 @@
     - [x] Fortran95
     
    - Fazer atividade 2 </br>
-    - [ ] C
-    - [ ] Java
-    - [ ] Javascri
-    - [ ] Pascal
-    - [ ] PHP
+    - [ ] C </br>
+    - [ ] Java </br>
+    - [ ] Javascript </br>
+    - [ ] Pascal </br>
+    - [ ] PHP </br>
     - [ ] Python </br>
-    - [ ] Lisp
-    - [ ] Fortran95    
+    - [ ] Lisp </br>
+    - [ ] Fortran95  </br>   
     
    - Fazer Atividade 3
-    - [ ] C
-    - [ ] Java
-    - [ ] Javascri
-    - [ ] Pascal
-    - [ ] PHP
-    - [ ] Python
-    - [ ] Lisp
-    - [ ] Fortran95    
+    - [ ] C </br>
+    - [ ] Java </br>
+    - [ ] Javascript </br>
+    - [ ] Pascal </br>
+    - [ ] PHP </br>
+    - [ ] Python </br>
+    - [ ] Lisp </br>
+    - [ ] Fortran95 </br>    
