@@ -3,14 +3,14 @@
 ##CheckList
 
   - Fazer bubblesort
-    - [ x ] C
-    - [ x ] Java
-    - [ x ] Javascript
-    - [ x ] Pascal
-    - [ x ] PHP
-    - [ x ] Python
+    - [x] C
+    - [x] Java
+    - [x] Javascript
+    - [x] Pascal
+    - [x] PHP
+    - [x] Python
     - [ ] Lisp
-    - [ x ] Fortran95
+    - [x] Fortran95
     
     
    - Fazer atividade 2
