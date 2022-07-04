@@ -1,38 +1,51 @@
 Program bubble
+    !USE PORTLIB
     implicit none
+    integer :: i,n,aux,troca,j,aleatorio,k
+    integer, dimension(10000) :: vet
+    real :: x,ini,end,media,tempo
+    n=10000
+    ini=0.00
+    end=0.00
+    tempo=0.0
+    media=0.0
 
-    integer, dimension(20) :: vet
-    integer :: i,n,aux,troca,j,aleatorio
-    real :: x
+    do k = 1, 1000
+        
+        troca=1
 
-    call rseed()
-
-    do j=1,20
-        ! gera um número aleatório
-        call random_number(x)
-        ! imprime na tela o número gerado
-        aleatorio=x*1000+1
-        vet(j)= aleatorio
-    end do
-
-    n=20
-    troca=1
-    print*,vet
-    do while(troca/=0)
-        troca = 0
-        do i=1,20
-            
-            if (vet(i) > vet(i+1)) then
-            
-                aux = vet(i)
-                vet(i) = vet(i+1)
-                vet(i+1) = aux
-                troca = 1
-            end if
-
+        CALL CPU_TIME(ini)
+        call rseed()
+        
+        do j=1,n
+    
+            call random_number(x)
+            aleatorio=x*10000+1
+            vet(j)= aleatorio
         end do
+
+        do while(troca/=0)
+            troca = 0
+            do i=1,n
+                
+                if (vet(i) > vet(i+1)) then
+                    aux = vet(i)
+                    vet(i) = vet(i+1)
+                    vet(i+1) = aux
+                    troca = 1
+                
+                end if
+            end do
+        end do
+    
+        CALL CPU_TIME(end)
+        !print*,'end -> ',end
+        !print*,'ini -> ',ini
+        tempo = end-ini
+        print*,k,' end-ini ->',end-ini
+        media = media+tempo
     end do
-    print*,vet
+    print*,'Media do tempo', media/10.0
 
 contains
 
