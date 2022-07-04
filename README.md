@@ -1,8 +1,8 @@
-# Prova2PLP
+# Prova2PLP :thumbsup:
 
 ## CheckList
 
-  - Fazer bubblesort
+  - Bubblesort
     - [x] C
     - [x] Java
     - [x] Javascript
@@ -12,7 +12,7 @@
     - [ ] Lisp
     - [x] Fortran95
     
-   - Fazer atividade 2 </br>
+   - Atividade 2 </br>
       - [ ] C </br>
       - [ ] Java </br>
       - [ ] Javascript </br>
@@ -22,7 +22,7 @@
       - [ ] Lisp </br>
       - [ ] Fortran95  </br>   
     
-   - Fazer Atividade 3
+   - Atividade 3
       - [ ] C </br>
       - [ ] Java </br>
       - [ ] Javascript </br>
