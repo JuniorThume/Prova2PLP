@@ -12,14 +12,13 @@
     - [ ] Lisp
     - [x] Fortran95
     
-    
-   - Fazer atividade 2
+   - Fazer atividade 2 </br>
     - [ ] C
     - [ ] Java
     - [ ] Javascri
     - [ ] Pascal
     - [ ] PHP
-    - [ ] Python
+    - [ ] Python </br>
     - [ ] Lisp
     - [ ] Fortran95    
     
