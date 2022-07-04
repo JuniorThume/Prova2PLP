@@ -1,5 +1,7 @@
 # Prova2PLP :thumbsup:
 
+![Logo do R](http://developer.r-project.org/Logo/Rlogo-5.png)
+
 ## CheckList
 
   - Bubblesort
