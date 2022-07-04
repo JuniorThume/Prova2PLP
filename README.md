@@ -1,6 +1,6 @@
 # Prova2PLP :thumbsup:
 
-![Meme]([https://conteudo.imguol.com.br/c/noticias/df/2022/02/17/ti-da-depressao-meme-1645104317374_v2_750x421.jpg](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWP4v8wH-SoTeL8H2P2InI_M0EERXiaI3XFw&usqp=CAU])
+![Meme]([https://conteudo.imguol.com.br/c/noticias/df/2022/02/17/ti-da-depressao-meme-1645104317374_v2_750x421.jpg)
 
 ## CheckList
 
