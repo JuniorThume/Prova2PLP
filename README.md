@@ -1,18 +1,34 @@
 # Prova2PLP
 
-## C
-  - Linguagem Compilada
+##CheckList
 
-## Java
- - Linguagem Interpretada
-
-## Python
-   - Linguagem Interpretada
-
-## Lisp
-
-## Fortran95
-   - Linguagem Compilada
-
-## JavaScript
-   - Linguagem Interpretada
+  - Fazer bubblesort
+    - [ x ] C
+    - [ x ] Java
+    - [ x ] Javascript
+    - [ x ] Pascal
+    - [ x ] PHP
+    - [ x ] Python
+    - [ ] Lisp
+    - [ x ] Fortran95
+    
+    
+   - Fazer atividade 2
+    - [ ] C
+    - [ ] Java
+    - [ ] Javascri
+    - [ ] Pascal
+    - [ ] PHP
+    - [ ] Python
+    - [ ] Lisp
+    - [ ] Fortran95    
+    
+   - Fazer Atividade 3
+    - [ ] C
+    - [ ] Java
+    - [ ] Javascri
+    - [ ] Pascal
+    - [ ] PHP
+    - [ ] Python
+    - [ ] Lisp
+    - [ ] Fortran95    
