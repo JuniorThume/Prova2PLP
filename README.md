@@ -1,6 +1,6 @@
 # Prova2PLP :thumbsup:
 
-![Meme](https://br.ifunny.co/picture/kkkkkkkkkkkkk-passel-em-medicinal-passei-em-ciencia-da-computacao-P0RcNAgf9)
+![Meme](https://img.ifunny.co/images/08ca08674580d8343e2928c76125ff0325903c4b64d38bf7b330815e64955e9b_1.webp)
 
 ## CheckList
 
