@@ -1,1 +1,0 @@
-# Juninho não era gay?
