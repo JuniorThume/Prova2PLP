@@ -1,4 +1,4 @@
-package program;
+package bubblesort;
 
 
 import java.io.*;
