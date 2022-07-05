@@ -22,13 +22,12 @@ float massa_mola(){
     float k = 1.0;
     
     for (t=0.0; t < TMAX ;t+=dt){
-        dx = vx*dt;
         dvx = -(k/m)*x*dt;
-        x = x+dx;
         vx = vx+dvx;
+        dx = vx*dt;
+        x = x+dx;
         pos[++i]=x;
         vel[i]=vx;
-        printf("%f teste\n",x);
     }
     time = clock()-time;
     escreve_saida(vel,pos);
