@@ -19,7 +19,6 @@ n=10000
 for i in range(1000):
 
     vet= random.sample(range(n),n)
-    
     inicio = time.time()
     bubbleSort(vet)
     fim = time.time()
