@@ -1,3 +1,0 @@
-0.01- Tempo de execucao293.1811809539795
-0.001- Tempo de execucao2698.814868927002
-1e-05- Tempo de execucao281359.0383529663

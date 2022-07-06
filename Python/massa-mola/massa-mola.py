@@ -4,7 +4,7 @@ import time
 TMAX = 1000.0
 
 def escreve(vel,pos,dt):
-    arq = open("Resultados-massa "+str(dt)+".txt","w")
+    arq = open("Resultados-massa"+str(dt)+".txt","w")
     for i in range(int(TMAX/dt)):
         arq.write("vel - "+str(vel[i])+" pos- "+ str(pos[i])+"\n")
     arq.close()
