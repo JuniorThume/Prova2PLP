@@ -5,7 +5,7 @@ var
    v: array [1..10000] of integer;
    I: integer;
  
-// Procedimento para ordenação utilizando o método bolha
+
 procedure bubble_sort();
 
 var
