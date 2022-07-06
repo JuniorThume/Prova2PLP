@@ -55,8 +55,8 @@ Você encontrou obstáculos para implementar os algoritmos solicitados em alguma
       - [ ] Fortran95  </br>   
     
    - Atividade 3
-      - [ ] C </br>
-      - [ ] Java </br>
+      - [x] C </br>
+      - [x] Java </br>
       - [ ] Javascript </br>
       - [ ] Pascal </br>
       - [ ] PHP </br>
