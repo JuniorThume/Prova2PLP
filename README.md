@@ -57,9 +57,9 @@ Você encontrou obstáculos para implementar os algoritmos solicitados em alguma
    - Atividade 3
       - [x] C </br>
       - [x] Java </br>
-      - [ ] Javascript </br>
+      - [x] Javascript </br>
       - [ ] Pascal </br>
-      - [ ] PHP </br>
-      - [ ] Python </br>
+      - [x] PHP </br>
+      - [x] Python </br>
       - [ ] Lisp </br>
       - [ ] Fortran95 </br>    
