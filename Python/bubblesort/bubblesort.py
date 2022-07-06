@@ -12,7 +12,7 @@ def bubbleSort(vet) :
                 vet[j+1] = aux
     
 tempoMedia=0.0
-arq = open("tempo.txt","w+")
+arq = open("tempo.txt","w")
 
 n=10000
 
