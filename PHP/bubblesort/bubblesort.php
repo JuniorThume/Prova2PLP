@@ -27,7 +27,6 @@ function bubbleSort($array)
   $totalTime = round($time_end - $time_start, 3);
   $base = 10;
   $exp = 6;
-  //$totalTime = ($time_end - $time_start)*(pow($base, $exp));
   print_r($totalTime . "\n");
   return $array;
 }
