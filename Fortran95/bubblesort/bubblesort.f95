@@ -1,51 +1,49 @@
 Program bubble
     !USE PORTLIB
     implicit none
-    integer :: i,n,aux,troca,j,aleatorio,k
+    integer :: i,z,aux,troca,j,aleatorio,k
     integer, dimension(1000) :: vet
     real :: x,ini,end,media,tempo
-    n=1000
+    z=1000
     ini=0.00
     end=0.00
     tempo=0.0
     media=0.0
 
+    open(1,file='runtime-bubbleSort.txt', status='new')
+
     do k = 1, 1000
-        
-        troca=1
+        print*,k
+       
 
         CALL CPU_TIME(ini)
         call rseed()
         
-        do j=1,n
-    
+        do j=1,z
             call random_number(x)
             aleatorio=x*10000+1
             vet(j)= aleatorio
+            
         end do
-
-        do while(troca/=0)
-            troca = 0
-            do i=1,n
-                
-                if (vet(i) > vet(i+1)) then
-                    aux = vet(i)
-                    vet(i) = vet(i+1)
-                    vet(i+1) = aux
-                    troca = 1
-                
-                end if
-            end do
+    
+        do i=1,z-1 
+            
+            if (vet(i) > vet(i+1)) then
+                aux = vet(i)
+                vet(i) = vet(i+1)
+                vet(i+1) = aux
+                    
+            end if
         end do
     
         CALL CPU_TIME(end)
-        !print*,'end -> ',end
-        !print*,'ini -> ',ini
+
         tempo = end-ini !Segundos
-       ! print*,k,' end-ini ->',end-ini
-        media = media+tempo
+        write (1,'(f10.3)') tempo
+
+        
     end do
-    print*,'Media do tempo', media/10.0
+    close(1)
 
 contains
 
