@@ -1,6 +1,7 @@
-package bubblesort;
+package Bubblesort;
 import java.util.Random;
 import java.io.*;
+
 
 
 public class bubblesort {
@@ -10,20 +11,17 @@ public class bubblesort {
         long tempoTotal = 0;
         long mediaTempoFinal;
         long tempoExecucaoIndividual = 0;
-        arqEdit arq = new arqEdit();
-        arq.limpaArquivo();
-        for(int i = 0; i < 10; i++) {
+        bubblesort bs = new bubblesort();
+        bs.limpaArquivo();
+        for(int i = 0; i < 1000; i++) {
             int v[] = new int[TAM];
-            bubblesort bs = new bubblesort();
             bs.insercao(v);
             tempoExecucaoIndividual = bs.ordenar(v);
-            arq.escreveArquivo(tempoExecucaoIndividual, 'r', i);
+            bs.escreveArquivo(tempoExecucaoIndividual);
             tempoTotal +=tempoExecucaoIndividual;
-            System.out.println("Aqui terminou a execucao: " + i +"\n");
         }
         
         mediaTempoFinal = tempoTotal/1000;
-        arq.escreveArquivo(mediaTempoFinal,' ', 0);
         System.out.println(mediaTempoFinal);
         
     }
@@ -42,7 +40,7 @@ public class bubblesort {
         }
         long tempoFinal = System.currentTimeMillis();
         long tempoTotal = (tempoFinal - tempoInicial);
-
+        
         return tempoTotal;
     }
 
@@ -51,6 +49,23 @@ public class bubblesort {
         for(int i = 0; i < TAM; i++){
             v[i] = gerarAleatorio.nextInt(TAM);
         }
+    }
+
+    public void escreveArquivo(long time) throws IOException{
+        FileWriter arqTeste = new FileWriter("resultado-java.csv", true);
+        
+        arqTeste.append((time)+"\n");
+        
+        arqTeste.close();
+    } 
+
+    public void limpaArquivo() throws IOException{
+        FileWriter arqTeste = new FileWriter("resultado-java.csv", false);
+        PrintWriter gravaTeste = new PrintWriter(arqTeste);
+        arqTeste.flush();
+        arqTeste.close();
+        gravaTeste.close();
+
     }
 
     
