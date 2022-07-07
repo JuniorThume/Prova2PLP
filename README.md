@@ -1,7 +1,5 @@
 # Prova2PLP :thumbsup:
 
-![Meme](https://img.ifunny.co/images/08ca08674580d8343e2928c76125ff0325903c4b64d38bf7b330815e64955e9b_1.webp)
-
 Os colegas da sua empresa gostaram muito das suas sugestões de linguagens para as aplicações que precisam desenvolver. No entanto, um líder sênior de desenvolvimento gostaria que você apresentasse uma justificativa do desempenho de algumas das linguagens que foram propostas.
 Nesta avaliação, você deverá implementar alguns algoritmos simples em diferentes linguagens e compará-los segundo alguns critérios. As linguagens em questão são C,  Fortran95, Java, Python, Pascal, PHP, Javascript, e Lisp.
 
