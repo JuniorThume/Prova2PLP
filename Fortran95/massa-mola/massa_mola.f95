@@ -3,20 +3,20 @@ Program massa_mola
     !Somar no max , a quantidade q irá faltar
 
     implicit none
-    integer, parameter :: Largereal_K = selected_real_kind (1,307)
-    real(kind=Largereal_K) :: tempo
+    integer, parameter :: Largereal_K = selected_real_kind (18,307)
+    real(kind=Largereal_K) :: comparador
     integer :: i,n,aux,contador,j,aleatorio,r
     real :: x,vx,dx,dvx,t,m,k,TMAX
-    real :: ini,end,media
+    real :: ini,end,media,tempo
     real :: dt,teste
-    real, dimension(1000000) :: vel_01
-    real, dimension(1000000) :: pos_01
+    real, dimension(100000000) :: vel_01
+    real, dimension(100000000) :: pos_01
 
-    real, dimension(10000000) :: vel_001
-    real, dimension(10000000) :: pos_001
+    real, dimension(1000000000) :: vel_001
+    real, dimension(1000000000) :: pos_001
 
-    real, dimension(100000000) :: vel_00001
-    real, dimension(100000000) :: pos_00001
+    real, dimension(100000000000) :: vel_00001
+    real, dimension(100000000000) :: pos_00001
     
     TMAX = 1000000.0
     contador=0
@@ -26,10 +26,6 @@ Program massa_mola
     media=0.0
     i=0
     
-    
-
-    
-
 
     do i=0,2
         
@@ -40,8 +36,9 @@ Program massa_mola
         k = 1.0
         t=0.0
         
-
         if(i ==0 ) then
+            
+            comparador = TMAX*100
             CALL CPU_TIME(ini)
             call rseed()
                 dt=1.01
@@ -56,13 +53,11 @@ Program massa_mola
                     vel_01(j)=vx
                     t = t+dt
                     
-                    if(t >= TMAX) then
+                    if(t >= comparador) then
                         contador = contador+1
                         exit
                     end if
 
-                    
-                
                 end do
             
             CALL CPU_TIME(end)  
@@ -74,7 +69,7 @@ Program massa_mola
         
 
         else if(i == 1) then
-            
+            comparador = TMAX*1000
             CALL CPU_TIME(ini)
             call rseed()
                 dt=1.01
@@ -89,12 +84,10 @@ Program massa_mola
                     vel_001(j)=vx
                     t = t+dt
                     
-                    if(t >= TMAX) then
+                    if(t >= comparador) then
                         contador = contador+1
                         exit
-                    end if
-
-                    
+                    end if     
                 
                 end do
             
@@ -107,7 +100,7 @@ Program massa_mola
             media = media +tempo
 
         else if(i == 2) then
-
+            comparador = TMAX*100000
             CALL CPU_TIME(ini)
             call rseed()
                 dt=1.01
@@ -122,13 +115,11 @@ Program massa_mola
                     vel_00001(j)=vx
                     t = t+dt
                     
-                    if(t >= TMAX) then
+                    if(t >= comparador) then
                         contador = contador+1
                         exit
                     end if
 
-                    
-                
                 end do
             
             CALL CPU_TIME(end)  
@@ -141,7 +132,6 @@ Program massa_mola
         
         end if
         
-       
     end do
     print*,'Media do tempo ', media/3
 
