@@ -43,21 +43,21 @@ Você encontrou obstáculos para implementar os algoritmos solicitados em alguma
     - [x] Fortran95
     
    - Atividade 2 </br>
-      - [ ] C </br>
+      - [x] C </br>
       - [ ] Java </br>
-      - [ ] Javascript </br>
+      - [x] Javascript </br>
       - [ ] Pascal </br>
       - [ ] PHP </br>
-      - [ ] Python </br>
+      - [x] Python </br>
       - [ ] Lisp </br>
-      - [ ] Fortran95  </br>   
+      - [x] Fortran95  </br>   
     
    - Atividade 3
       - [x] C </br>
       - [x] Java </br>
       - [x] Javascript </br>
-      - [ ] Pascal </br>
+      - [x] Pascal </br>
       - [x] PHP </br>
       - [x] Python </br>
       - [ ] Lisp </br>
-      - [ ] Fortran95 </br>    
+      - [x] Fortran95 </br>    
