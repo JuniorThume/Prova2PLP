@@ -33,7 +33,7 @@ float massa_mola(){
     escreve_saida(vel,pos);
     free (vel);
     free (pos);
-    time = ((double)time)/(CLOCKS_PER_SEC/1000);
+    time = ((double)time)/(CLOCKS_PER_SEC/1000); 
     return time;
 }
 void escreve_saida(float *vet, float *vet1){

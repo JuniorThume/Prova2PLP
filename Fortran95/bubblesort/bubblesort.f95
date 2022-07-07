@@ -2,9 +2,9 @@ Program bubble
     !USE PORTLIB
     implicit none
     integer :: i,n,aux,troca,j,aleatorio,k
-    integer, dimension(10000) :: vet
+    integer, dimension(1000) :: vet
     real :: x,ini,end,media,tempo
-    n=10000
+    n=1000
     ini=0.00
     end=0.00
     tempo=0.0
@@ -41,8 +41,8 @@ Program bubble
         CALL CPU_TIME(end)
         !print*,'end -> ',end
         !print*,'ini -> ',ini
-        tempo = end-ini
-        print*,k,' end-ini ->',end-ini
+        tempo = end-ini !Segundos
+       ! print*,k,' end-ini ->',end-ini
         media = media+tempo
     end do
     print*,'Media do tempo', media/10.0
