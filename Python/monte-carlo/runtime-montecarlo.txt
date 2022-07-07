@@ -1,1 +1,12 @@
-Tempo de execucao = 1485.7945442199707
+RESULTADO MONTE CARLO PYTHON
+Tempo de execucao = 601.3364791870117
+Tempo de execucao = 613.3584976196289
+Tempo de execucao = 600.3944873809814
+Tempo de execucao = 589.423418045044
+Tempo de execucao = 576.4913558959961
+Tempo de execucao = 584.4039916992188
+Tempo de execucao = 578.4878730773926
+Tempo de execucao = 583.4031105041504
+Tempo de execucao = 597.4020957946777
+Tempo de execucao = 591.4168357849121
+Tempo medio das execucoes 591.6118144989014
