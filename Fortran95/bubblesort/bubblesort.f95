@@ -10,6 +10,8 @@ Program bubble
     tempo=0.0
     media=0.0
 
+    open(1,file='runtime_bubbleSort.txt',status = 'old')
+
     do k = 1, 1000
         
         troca=1
@@ -43,9 +45,11 @@ Program bubble
         !print*,'ini -> ',ini
         tempo = end-ini !Segundos
        ! print*,k,' end-ini ->',end-ini
-        media = media+tempo
+
+        write(1,"(f6.4)") tempo
     end do
-    print*,'Media do tempo', media/10.0
+
+    close(1)
 
 contains
 
