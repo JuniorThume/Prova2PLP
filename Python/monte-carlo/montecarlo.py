@@ -16,7 +16,7 @@ while (cont<1000000):
    x=2*random.random()-1   
    y=2*random.random()-1  
 
-   ponto =x**2+y**2             
+   ponto = x*x + y*y             
 
    if (ponto<=1):        
       dentro +=1
@@ -25,6 +25,8 @@ while (cont<1000000):
       fora +=1
    cont += 1
 
+print("dentro ",dentro)
+print("fora ",fora)
 valor_pi = 4*dentro/(dentro+fora)
 
 fim = time.time()
