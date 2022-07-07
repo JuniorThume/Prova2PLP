@@ -6,6 +6,7 @@
 
 ;(defvar tam_vet 100000)
 ;(setf tam_vet (/ TMAX dt))
+;não consegui criar vetores com o tam_vet como TMAX/dt
 
 (setf vel (make-array '(100)))
 (setf pos (make-array '(100)))
@@ -43,7 +44,7 @@
         :if-does-not-exist :create 
         :if-exists :append)
 
-        (print '(Exemplo de saida) output)
+        ;(print '(Exemplo de saida) output)
     )
     
 )
@@ -57,6 +58,6 @@
     :if-does-not-exist :create 
     :if-exists :append)
 
-    (format output time)
+    ;(format output time)
 )
 
