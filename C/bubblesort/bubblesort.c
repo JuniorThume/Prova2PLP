@@ -2,20 +2,21 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#define TAM 10000
 
 int bubbleSort(FILE* arq, int qtd){
     clock_t t;
     t = clock();
-    int vet[10000], n, aux, i, j;
-    n= 10000;   
+    int vet[TAM], aux, i, j;
+       
     
-    for(i=0; i < n; i++){
+    for(i=0; i < TAM; i++){
         vet[i]= rand() % 10000;
         
     }
     
-    for(i=0; i < n - 1; i++){       
-        for(j=0; j < n - i - 1; j++){          
+    for(i=0; i < TAM - 1; i++){       
+        for(j=0; j < TAM - i - 1; j++){          
             if(vet[j] > vet[j+1]){               
                 aux = vet[j];
                 vet[j] = vet[j+1];
@@ -37,7 +38,7 @@ int main(){
     FILE* arq;
     int i;
     double tempoMedio,tempo;
-    arq = fopen("tempo.txt","wt");
+    arq = fopen("tempo-bubblesort.txt","wt");
     for(i=0; i<1000 ; i++){
         tempo=bubbleSort(arq,i);
         tempoMedio = tempoMedio+tempo;     
