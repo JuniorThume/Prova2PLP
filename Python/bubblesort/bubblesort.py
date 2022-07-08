@@ -12,7 +12,7 @@ def bubbleSort(vet) :
                 vet[j+1] = aux
     
 tempoMedia=0.0
-arq = open("tempo.txt","w")
+arq = open("tempo-bubblesort.csv","w")
 
 n=10000
 
@@ -22,16 +22,15 @@ for i in range(1000):
     inicio = time.time()
     bubbleSort(vet)
     fim = time.time()
-    total = (fim-inicio)*1000 #milissegundos
+    total = (fim-inicio)*1000#milissegundos
     
-    print("Tempo de execucao "+str(i)+" = "+ str(total)+"\n")
-    arq.write("Tempo de execucao "+str(i)+" = "+ str(total)+"\n")
+    arq.write(str(total)+"\n")
     vet.clear()
     tempoMedia = tempoMedia+total
 
 
 tempoMedia = tempoMedia/1000 
-arq.write("Tempo media das execucoes = "+str(tempoMedia))
+print(tempoMedia)
 arq.close()
 
 
