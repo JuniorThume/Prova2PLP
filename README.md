@@ -50,7 +50,7 @@ Você encontrou obstáculos para implementar os algoritmos solicitados em alguma
       - [ ] PHP </br>
       - [x] Python </br>
       - [ ] Lisp </br>
-      - [] Fortran95  </br>   
+      - [ ] Fortran95  </br>   
     
    - Atividade 3
       - [x] C </br>
