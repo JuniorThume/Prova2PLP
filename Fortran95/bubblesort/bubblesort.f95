@@ -10,7 +10,7 @@ Program bubble
     tempo=0.0
     media=0.0
 
-    open(1,file='runtime_bubbleSort.txt',status = 'old')
+    open(1,file='runtime_bubbleSort.csv',status = 'old')
 
     do k = 1, 1000
         
