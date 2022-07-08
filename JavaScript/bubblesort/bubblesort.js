@@ -1,6 +1,8 @@
 // Variaveis
 const NUM = 10000
 
+const fs = require("fs")
+
 function bubbleSort(items) {
     const inicio = Date.now();
     for (var i = 0; i < NUM; i++) { 
@@ -27,17 +29,21 @@ function removeArray(array){
         array.pop();
     }
 }
-
+var stream = fs.createWriteStream("resultado-bubblesort.txt");
+stream.once('open', function(fd) {});
 
 let tempo = 0
-for(let k = 0; k < 10000; k++){
+for(let k = 0; k < 1000; k++){
     var array = new Array(NUM);
     insertArray(array);
-    tempo = tempo + bubbleSort(array);
+    tempoIndividual = bubbleSort(array)
+    tempo += tempoIndividual;
     removeArray(array);
-    console.log(`Execução ${k}: tempo de ${tempo} segundos`);
+    
+    stream.write((tempoIndividual*1000)+"\n");
+    //console.log(`${tempo}`);
 }
-
+stream.end();
 console.log(`O tempo total decorrido foi de ${tempo} segundos`);
 
 
