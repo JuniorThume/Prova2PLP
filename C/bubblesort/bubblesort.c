@@ -34,7 +34,6 @@ int bubbleSort(FILE* arq, int qtd){
 
 
 int main(){
-    
     FILE* arq;
     int i;
     double tempoMedio,tempo;
