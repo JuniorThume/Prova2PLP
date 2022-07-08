@@ -16,7 +16,7 @@ int main(){
 
     float x,y,ponto,sorteio, valor_pi;
 
-    while(cont < 1000000){
+    while(cont < 100){
         sorteio = (float)rand()/(float)RAND_MAX;
         x= 2 * sorteio -1;
 
@@ -25,10 +25,15 @@ int main(){
 
         ponto = x*x + y*y;
 
-        if(ponto<=1)
+        if(ponto<=1){
             dentro++;
-        else
+        }
+            
+        else{
             fora++;
+            printf("Entra ponto - %d\n",ponto);
+        }
+            
 
         cont++;
     }

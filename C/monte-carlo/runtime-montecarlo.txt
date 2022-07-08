@@ -1,1 +1,1 @@
-Tempo de execucao 0.208923
+Tempo de execucao 0.002000

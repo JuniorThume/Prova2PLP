@@ -1,0 +1,405 @@
+ RUN TIME MONTE CARLO
+ Execucao            0
+ Valor simulado de pi :   3.14140081    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao            1
+ Valor simulado de pi :   3.14150691    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao            2
+ Valor simulado de pi :   3.14180756    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao            3
+ Valor simulado de pi :   3.14115977    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao            4
+ Valor simulado de pi :   3.14101768    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao            5
+ Valor simulado de pi :   3.14131761    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao            6
+ Valor simulado de pi :   3.14145112    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao            7
+ Valor simulado de pi :   3.14124584    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao            8
+ Valor simulado de pi :   3.14141822    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao            9
+ Valor simulado de pi :   3.14140201    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           10
+ Valor simulado de pi :   3.14123058    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           11
+ Valor simulado de pi :   3.14117050    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           12
+ Valor simulado de pi :   3.14110231    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           13
+ Valor simulado de pi :   3.14100051    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           14
+ Valor simulado de pi :   3.14120626    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           15
+ Valor simulado de pi :   3.14120603    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           16
+ Valor simulado de pi :   3.14113307    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           17
+ Valor simulado de pi :   3.14127350    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           18
+ Valor simulado de pi :   3.14126563    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           19
+ Valor simulado de pi :   3.14124393    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           20
+ Valor simulado de pi :   3.14131308    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           21
+ Valor simulado de pi :   3.14125443    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           22
+ Valor simulado de pi :   3.14125299    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           23
+ Valor simulado de pi :   3.14135957    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           24
+ Valor simulado de pi :   3.14128733    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           25
+ Valor simulado de pi :   3.14128494    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           26
+ Valor simulado de pi :   3.14125729    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           27
+ Valor simulado de pi :   3.14125848    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           28
+ Valor simulado de pi :   3.14116645    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           29
+ Valor simulado de pi :   3.14115047    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           30
+ Valor simulado de pi :   3.14112449    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           31
+ Valor simulado de pi :   3.14114881    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           32
+ Valor simulado de pi :   3.14117932    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           33
+ Valor simulado de pi :   3.14124179    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           34
+ Valor simulado de pi :   3.14128327    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           35
+ Valor simulado de pi :   3.14135361    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           36
+ Valor simulado de pi :   3.14131284    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           37
+ Valor simulado de pi :   3.14130425    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           38
+ Valor simulado de pi :   3.14126968    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           39
+ Valor simulado de pi :   3.14131331    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           40
+ Valor simulado de pi :   3.14136505    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           41
+ Valor simulado de pi :   3.14144301    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           42
+ Valor simulado de pi :   3.14149117    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           43
+ Valor simulado de pi :   3.14155984    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           44
+ Valor simulado de pi :   3.14156747    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           45
+ Valor simulado de pi :   3.14157557    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           46
+ Valor simulado de pi :   3.14154339    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           47
+ Valor simulado de pi :   3.14154291    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           48
+ Valor simulado de pi :   3.14158154    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           49
+ Valor simulado de pi :   3.14157176    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           50
+ Valor simulado de pi :   3.14158058    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           51
+ Valor simulado de pi :   3.14159942    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           52
+ Valor simulado de pi :   3.14154863    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           53
+ Valor simulado de pi :   3.14158130    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           54
+ Valor simulado de pi :   3.14157176    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           55
+ Valor simulado de pi :   3.14153743    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           56
+ Valor simulado de pi :   3.14153790    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           57
+ Valor simulado de pi :   3.14156127    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           58
+ Valor simulado de pi :   3.14154983    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           59
+ Valor simulado de pi :   3.14155436    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           60
+ Valor simulado de pi :   3.14158249    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           61
+ Valor simulado de pi :   3.14156008    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           62
+ Valor simulado de pi :   3.14155650    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           63
+ Valor simulado de pi :   3.14161158    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           64
+ Valor simulado de pi :   3.14161849    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           65
+ Valor simulado de pi :   3.14156055    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           66
+ Valor simulado de pi :   3.14156485    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           67
+ Valor simulado de pi :   3.14158010    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           68
+ Valor simulado de pi :   3.14157510    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           69
+ Valor simulado de pi :   3.14157009    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           70
+ Valor simulado de pi :   3.14151573    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           71
+ Valor simulado de pi :   3.14152956    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           72
+ Valor simulado de pi :   3.14154482    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           73
+ Valor simulado de pi :   3.14153361    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           74
+ Valor simulado de pi :   3.14155197    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           75
+ Valor simulado de pi :   3.14153552    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           76
+ Valor simulado de pi :   3.14152193    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           77
+ Valor simulado de pi :   3.14152837    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           78
+ Valor simulado de pi :   3.14151812    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           79
+ Valor simulado de pi :   3.14148736    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           80
+ Valor simulado de pi :   3.14151025    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           81
+ Valor simulado de pi :   3.14152741    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           82
+ Valor simulado de pi :   3.14156508    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           83
+ Valor simulado de pi :   3.14158082    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           84
+ Valor simulado de pi :   3.14159369    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           85
+ Valor simulado de pi :   3.14159155    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           86
+ Valor simulado de pi :   3.14156365    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           87
+ Valor simulado de pi :   3.14157033    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           88
+ Valor simulado de pi :   3.14155340    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           89
+ Valor simulado de pi :   3.14153647    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           90
+ Valor simulado de pi :   3.14154696    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           91
+ Valor simulado de pi :   3.14156866    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           92
+ Valor simulado de pi :   3.14155889    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           93
+ Valor simulado de pi :   3.14154410    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           94
+ Valor simulado de pi :   3.14154601    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           95
+ Valor simulado de pi :   3.14153218    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           96
+ Valor simulado de pi :   3.14153051    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           97
+ Valor simulado de pi :   3.14155030    
+ Tempo de execucao em ms :    62.5000000    
+ ############
+ Execucao           98
+ Valor simulado de pi :   3.14154887    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao           99
+ Valor simulado de pi :   3.14156699    
+ Tempo de execucao em ms :    46.8750000    
+ ############
+ Execucao          100
+ Valor simulado de pi :   3.14155722    
+ Tempo de execucao em ms :    46.8750000    
+ ############
