@@ -23,25 +23,21 @@ def monteCarlo() :
 
 def main():
   
-   arq = open("Python/monte-carlo/runtime-montecarlo.txt","w")
-   arq.write("RESULTADO MONTE CARLO PYTHON\n")
+   arq = open("runtime-montecarlo.csv","w")
    media = 0.0
    
-   for i in range(10):
+   for i in range(100):
       inicio = time.time()
       valor_pi= monteCarlo()
       fim = time.time()
 
       tempo = (fim-inicio)*1000 #milissegundos
       media = media+tempo
-      print("Valor simulado de pi: ",valor_pi)
-      print("Tempo de execucao = "+ str(tempo)+"\n")
-      arq.write("Tempo de execucao = "+ str(tempo)+"\n")
+      arq.write(str(tempo)+"\n")
 
-   media = media/10
+   media = media/100
    
    print("Tempo medio das execucoes "+str(media)+"\n")
-   arq.write("Tempo medio das execucoes "+str(media)+"\n")
    arq.close()
 
 main()
