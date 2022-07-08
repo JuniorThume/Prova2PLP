@@ -38,8 +38,8 @@ float massa_mola(){
 }
 void escreve_saida(float *vet, float *vet1){
     FILE* arq;
-    arq = fopen("tempo-massa-mola.txt","wt");
-    for(int i=0; i < (TMAX/0.001); i++){
+    arq = fopen("resultado-massa-mola.csv","wt");
+    for(int i=0; i < (TMAX/dt); i++){
         fprintf(arq,"%f %f\n",vet[i],vet1[i]);
     }
     fclose(arq);
