@@ -21,7 +21,9 @@ int main(){
     while(cont < 100){
         tempo = clock();
         for(i=0;i<1000000;i++){
+         
             sorteio = (float)rand()/(float)RAND_MAX;
+            
             x= 2 * sorteio -1;
             
             sorteio = (float)rand()/(float)RAND_MAX;

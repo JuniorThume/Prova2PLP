@@ -47,7 +47,7 @@ Você encontrou obstáculos para implementar os algoritmos solicitados em alguma
       - [x] Java </br>
       - [x] Javascript </br>
       - [ ] Pascal </br>
-      - [ ] PHP </br>
+      - [x] PHP </br>
       - [x] Python </br>
       - [ ] Lisp </br>
       - [x] Fortran95  </br>   
