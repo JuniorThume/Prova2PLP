@@ -29,7 +29,7 @@ function removeArray(array){
         array.pop();
     }
 }
-var stream = fs.createWriteStream("resultado-bubblesort.txt");
+var stream = fs.createWriteStream("resultado-bubblesort.csv");
 stream.once('open', function(fd) {});
 
 let tempo = 0
