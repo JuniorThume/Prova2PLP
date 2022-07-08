@@ -26,7 +26,10 @@ Program massa_mola
     media=0.0
     i=0
     
-
+    open(1,file='runtime_massaMola1.txt',status = 'old')
+    open(2,file='runtime_massaMola2.txt',status = 'old')
+    open(3,file='runtime_massaMola3.txt',status = 'old')
+    
     do i=0,2
         
         j=-1
@@ -64,8 +67,8 @@ Program massa_mola
             
             tempo = end - ini
             print*,"1"
-            print "(f6.4)", tempo ! Segundos
-            media = media +tempo
+            write(1,"(f6.4)") tempo*1000    !-Milissegundos
+            
         
 
         else if(i == 1) then
@@ -93,11 +96,9 @@ Program massa_mola
             
             CALL CPU_TIME(end)  
 
-
             tempo = end - ini
-            print*,"3"
-            print "(f6.4)", tempo ! Segundos
-            media = media +tempo
+            write(2,"(f6.4)") tempo*1000    !-Milissegundos
+           
 
         else if(i == 2) then
             comparador = TMAX*100000
@@ -124,16 +125,15 @@ Program massa_mola
             
             CALL CPU_TIME(end)  
             
-            
             tempo = end - ini
-            print*,"2"
-            print "(f6.4)", tempo ! Segundos
-            media = media +tempo
+            write(3,"(f6.4)") tempo*1000    !-Milissegundos
         
         end if
         
     end do
-    print*,'Media do tempo ', media/3
+    close(1)
+    close(2)
+    close(3)
 
 contains
 

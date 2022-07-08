@@ -46,7 +46,7 @@ Program bubble
         tempo = end-ini !Segundos
        ! print*,k,' end-ini ->',end-ini
 
-        write(1,"(f6.4)") tempo
+        write(1,"(f6.4)") tempo*1000 !- Transformado para milissegundos
     end do
 
     close(1)
