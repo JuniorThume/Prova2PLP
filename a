@@ -1,0 +1,528 @@
+[33mcommit 270c1f6cad669c26338521aa32993feed7f3276e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Thu Jul 7 19:43:07 2022 -0300
+
+    Fortran bubble leitura e escrita pronto
+
+[33mcommit 70967e297dbf710091ac3ce92468c3c6ca2e5558[m
+Merge: 7da9cb5 4988b95
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Thu Jul 7 19:03:18 2022 -0300
+
+    Merge branch 'main' of github.com:JuniorThume/Prova2PLP
+
+[33mcommit 7da9cb51282cf0f58e9078b2f7c420360f4fa1ef[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Thu Jul 7 19:02:58 2022 -0300
+
+    Modificado monte carlo python
+
+[33mcommit 4988b954cac537799293758a2eb19a01a7043867[m
+Author: Junior Thume <juninhothume21@gmail.com>
+Date:   Thu Jul 7 18:51:46 2022 -0300
+
+    bubble em C esta FINALIDADO
+
+[33mcommit 21abbe57aea4140870bf12ab5d7fb404f6b97499[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Thu Jul 7 18:49:13 2022 -0300
+
+    Update README.md
+
+[33mcommit d41b7b8fe47b75f11425451657babddc08eb10ef[m
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Thu Jul 7 18:04:05 2022 -0300
+
+    montecarlo em js
+
+[33mcommit 454de667edf88cb7096a68d1dc81ace355e14bd4[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Thu Jul 7 17:04:43 2022 -0300
+
+    massa mola quase pronta fortran
+
+[33mcommit 943928e4ab13451e8bce62369b5752fe5c8be94c[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Thu Jul 7 16:44:42 2022 -0300
+
+    massa mola quase pronta fortran
+
+[33mcommit e1d67c7eabcb9602c7c0a35270ac73d67327756d[m
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Thu Jul 7 16:03:44 2022 -0300
+
+    montecarlo em c e python
+
+[33mcommit 0639e3d7943b8c3cdc45da2cf94eee3100967543[m
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Thu Jul 7 14:43:51 2022 -0300
+
+    montecarlo em python
+
+[33mcommit 4b0e4b31d1ea135ceb65c8fe1f9edea1d35aa6b0[m
+Author: Rodrigo Klein <79477834+Driklein@users.noreply.github.com>
+Date:   Thu Jul 7 13:48:11 2022 -0300
+
+    Update README.md
+
+[33mcommit a516004a751aaf653bcaf996b46f2f42660583e5[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Wed Jul 6 16:32:55 2022 -0300
+
+    desenvolvimento inacabado em Pascal
+
+[33mcommit 8047aa561da41ad1e83c94ed3bb188721ce816f4[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Wed Jul 6 15:53:41 2022 -0300
+
+    delete de alguns arquivos redundantes
+
+[33mcommit 7dee907f187e2aaa9e1698ceae4b2fa22346ff58[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Wed Jul 6 15:53:08 2022 -0300
+
+    Alterações em Pascal
+
+[33mcommit 1e327286e815316878699a2461ae1b18456b12de[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Wed Jul 6 15:52:32 2022 -0300
+
+    Alterações em códigos Lisp
+
+[33mcommit 17521bbfe9e0e53470763adf2843a6be74595d2c[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Wed Jul 6 15:52:04 2022 -0300
+
+    alterações em Fortran
+
+[33mcommit 4de03bfbe70230b46e85536a9345546775051dd6[m
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Wed Jul 6 15:15:06 2022 -0300
+
+    massa-mola em lisp (incompleto)
+
+[33mcommit 7fa2f4ec6318ac427b36615f9b66a76382854367[m
+Merge: 5ae0d08 5f96d1a
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Wed Jul 6 11:27:20 2022 -0300
+
+    Merge branch 'main' of https://github.com/JuniorThume/Prova2PLP
+
+[33mcommit 5ae0d086a31ced2e5fdaec923bc6d5d8ab37a294[m
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Wed Jul 6 11:26:07 2022 -0300
+
+    massa mola em Lisp (inconcluido)
+
+[33mcommit 5f96d1a71fc126f5074c2b8a3571b3928dc32714[m
+Author: Leonardo Sonco <87205411+LeonardoSonco@users.noreply.github.com>
+Date:   Wed Jul 6 10:53:14 2022 -0300
+
+    Update README.md
+
+[33mcommit eb29bbf5d42d090fa4b4b24171c089680e97ac18[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Wed Jul 6 10:50:03 2022 -0300
+
+    Feit bubble e massa, falta executar testes
+
+[33mcommit ef8f119f56d91a80b0a462c83d19427635c0603a[m
+Merge: 8352323 38afdf0
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Wed Jul 6 10:47:56 2022 -0300
+
+    Merge branch 'main' of github.com:JuniorThume/Prova3PLP
+
+[33mcommit 83523230adba42f01675c92f84606bfb908dc980[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Wed Jul 6 10:47:22 2022 -0300
+
+    python massa mola e bubble pronto, falta executar
+
+[33mcommit 38afdf07f615bd6248cf304815bad008a69d3a02[m
+Merge: bc9c039 146b402
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Wed Jul 6 10:01:04 2022 -0300
+
+    Merge branch 'main' of github.com:JuniorThume/Prova2PLP
+
+[33mcommit bc9c03989cfd834a662ec0b50e720ff41bf527f0[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Wed Jul 6 10:00:47 2022 -0300
+
+    Adicionado o massa-mola em PHP
+
+[33mcommit 146b4022202016bf6887ab0b055e36d5b86d5e3e[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Wed Jul 6 09:58:29 2022 -0300
+
+    Modificando massa mola python
+
+[33mcommit d62b035776aa8702f01575af32c1944a35e89753[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Wed Jul 6 09:43:50 2022 -0300
+
+    apagado tempo-massa-mola
+
+[33mcommit b6e0323852db350fdb1eeca6190f49050360f79d[m
+Merge: 0b94fa0 7f5c156
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Wed Jul 6 09:41:20 2022 -0300
+
+    Merge branch 'main' of github.com:JuniorThume/Prova2PLP
+
+[33mcommit 0b94fa0ae0ec97746d57782a2644ceca036597b9[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Wed Jul 6 09:41:14 2022 -0300
+
+    alterações em javascript
+
+[33mcommit 7f5c156b903bea2c5476cb0e2826c82b70b45812[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Tue Jul 5 16:38:09 2022 -0300
+
+    Update README.md
+
+[33mcommit 6c9d92e8e2224307c8275d67bf139df46f7a69d8[m
+Merge: d3e0fb4 ffd90e8
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Tue Jul 5 16:36:16 2022 -0300
+
+    Merge branch 'main' of github.com:JuniorThume/Prova2PLP
+
+[33mcommit d3e0fb418bc51b51e9e85796348debfb12258539[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Tue Jul 5 16:36:00 2022 -0300
+
+    Adicionado massa-mola em Java
+
+[33mcommit ffd90e87e138b35e8ebb36ee545d7c4b227a7208[m
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Tue Jul 5 13:53:38 2022 -0300
+
+    bubblesort em lisp (com erro)
+
+[33mcommit 746c03e9e5886d7855864a2afc6cc9eadc4e20e9[m
+Merge: 3024429 aafa813
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Tue Jul 5 13:50:27 2022 -0300
+
+    Merge branch 'main' of https://github.com/JuniorThume/Prova2PLP
+
+[33mcommit 30244293036579d705a4be33e9d110258d6d74d1[m
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Tue Jul 5 13:46:27 2022 -0300
+
+    bubblesort em lisp (com erro)
+
+[33mcommit aafa8135a928e0de9c2bba9a6a5575cfb761883e[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Tue Jul 5 11:02:31 2022 -0300
+
+    Mudança de nome do diretorio do bubblesort
+
+[33mcommit d7a898da11206e5adeb66b1c3e766d25ca11e24e[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Tue Jul 5 10:59:42 2022 -0300
+
+    Algortimo de monte carlo em andamento
+
+[33mcommit 1d5d1d524f803278e2cbdf42369bb9a14b01931f[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Tue Jul 5 10:58:57 2022 -0300
+
+    Massa-mola finalizado
+
+[33mcommit 7209d36404e037910ec085c8ec295b6b3e3d6c6d[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Tue Jul 5 10:58:17 2022 -0300
+
+    Organização alterada
+
+[33mcommit 3062c5cbde2c3d89a487c8436266787401e778f7[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Tue Jul 5 09:40:43 2022 -0300
+
+    modificado o metdo carlos
+
+[33mcommit 89d2bda5c731098ba7b9cc0280bc8d2a6ad0a6e9[m
+Merge: 89cd02c 67fe138
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Tue Jul 5 09:26:27 2022 -0300
+
+    Merge branch 'main' of github.com:JuniorThume/Prova2PLP
+
+[33mcommit 89cd02cd40d80f567d131fd31d7a378db33481f3[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Tue Jul 5 09:26:13 2022 -0300
+
+    alterado conteúdo de aplicações em C
+
+[33mcommit 67fe1380911947eb1e6ea13181bd2f4494dafbae[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:48:26 2022 -0300
+
+    Update README.md
+
+[33mcommit d33754089e12413bc945327104a1a33bd4d1949b[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:47:54 2022 -0300
+
+    Update README.md
+
+[33mcommit eee80731b64333f091aebb3d7f072c82bd33387a[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:47:11 2022 -0300
+
+    Update README.md
+
+[33mcommit 9d34d69211406a36efdf013538f9f6ea323ff0c7[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:47:01 2022 -0300
+
+    Update README.md
+
+[33mcommit 7b84f705d1a18833c895d7d033c9ed2b0fbf3c95[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:46:22 2022 -0300
+
+    Update README.md
+
+[33mcommit b9c873fc4cc07fabb3750cdf1f8707bd78ea6d31[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:45:49 2022 -0300
+
+    Update README.md
+
+[33mcommit 176b3f23572fbb4ffbe59bf1bec9b05ccae51f6d[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:43:07 2022 -0300
+
+    Update README.md
+
+[33mcommit 7c316dfba19edc1adf9f3195d24afab2357edb0a[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:42:38 2022 -0300
+
+    Update README.md
+
+[33mcommit b01c219ca0ed36df60256bc1f2c8107fcdabcd60[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:36:24 2022 -0300
+
+    Update README.md
+
+[33mcommit ff46d90df81c8b173877b3235b0d0fbf83d20bcc[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:33:40 2022 -0300
+
+    Update README.md
+
+[33mcommit 8987f0db70104bf338f987a3a5792209d043a99c[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:33:01 2022 -0300
+
+    Update README.md
+
+[33mcommit fdfabef28e1ced09a654c95efd723d16525c7067[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:32:35 2022 -0300
+
+    Update README.md
+
+[33mcommit 4bf3a371cee61b21265500664685fb32ebfefa64[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:31:27 2022 -0300
+
+    Update README.md
+
+[33mcommit 6fe3dba5a95449c9bf7ee995b992da92449a8395[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:30:31 2022 -0300
+
+    Update README.md
+
+[33mcommit 844f4e7845eec18b18555f2e53db3a7aa1789133[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:29:41 2022 -0300
+
+    Update README.md
+
+[33mcommit 49f0b101b3f3a427fa0c384a8ae5215cce53bd63[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:28:57 2022 -0300
+
+    Mudança de layout
+
+[33mcommit d2c78aa005afb4bb85d75c5bdbc02c068ed104ad[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Mon Jul 4 14:28:19 2022 -0300
+
+    Mudança de layout
+
+[33mcommit cd65e7c1144b83b1918efa2fc3cd528921155c0e[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Mon Jul 4 14:19:35 2022 -0300
+
+    Adicionado o bubblesort em Pascal
+
+[33mcommit 7c9fc190e5954713ddb60aa3bdf84dfdbcd068e1[m
+Merge: b81d1e2 12669a5
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Mon Jul 4 14:14:31 2022 -0300
+
+    Merge branch 'main' of github.com:JuniorThume/Prova2PLP
+
+[33mcommit b81d1e2aef782ce973aefd34264b0782b02ce2fc[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Mon Jul 4 14:14:09 2022 -0300
+
+    Tempo calculado, verificar
+
+[33mcommit 12669a5e68e357f4dc4e39583d5a5d42fb014abf[m
+Merge: 795551d 9aaa4cb
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Mon Jul 4 13:32:31 2022 -0300
+
+    Merge branch 'main' of github.com:JuniorThume/Prova2PLP
+
+[33mcommit 795551d6965387a27a85bf14447aa281a7c7efb5[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Mon Jul 4 13:31:57 2022 -0300
+
+    Adicionado o bubblesort em PHP
+
+[33mcommit 9aaa4cb3b16e55d69cfaa6077415a1c0763aec7e[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Mon Jul 4 13:16:37 2022 -0300
+
+    Gerador de numero Aleatorios -Feito
+
+[33mcommit 456854297dd5746ec7be21dac8fa0da9e115fe54[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Mon Jul 4 11:24:42 2022 -0300
+
+    Fortran bubble
+
+[33mcommit 0c68d60c36da97859b6aead097b674c5e58dd5aa[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Sun Jul 3 23:54:18 2022 -0300
+
+    Update README.md
+
+[33mcommit 43e52f7a30afb488803bca161dcef5534a8ece61[m
+Merge: 23a90f4 e590d93
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Sun Jul 3 23:51:03 2022 -0300
+
+    Merge branch 'main' of github.com:JuniorThume/Prova2PLP
+
+[33mcommit 23a90f487f211949d0b4e3c4a66ce1d62dc57dc2[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Sun Jul 3 23:45:42 2022 -0300
+
+    Excluindo arquivos desnecessarios e incluindo bubblesort em javascript
+
+[33mcommit e590d93c1d3d8f43307bcc9c6e503be60e2db96b[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Sun Jul 3 23:45:42 2022 -0300
+
+    Inserido bubblesort em Javascript
+
+[33mcommit 67f22f1a268fd19d24c17744988925f91fb3f0ce[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Sun Jul 3 21:04:01 2022 -0300
+
+    Deletando o desnecessario
+
+[33mcommit b178279d64e5bf99dbd13024874931323f84c1aa[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Sun Jul 3 21:02:29 2022 -0300
+
+    gitignore funcionando
+
+[33mcommit 57ff3d23b6500be34badef61527faf2bec0ed803[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Sun Jul 3 21:01:04 2022 -0300
+
+    adicionado o ignore para o vscode
+
+[33mcommit 1989e26e70ce8e0f8e7691caaa0d6ba138bca13b[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Sun Jul 3 20:58:28 2022 -0300
+
+    Adicionado o bubble em Java
+
+[33mcommit d1e1cd93c45483bf7def4f13e46878160368e8ca[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Sun Jul 3 18:22:54 2022 -0300
+
+    Python e C modificados
+
+[33mcommit 7f8cc2d3f936b1fdb1ed3c449f9c20365107c9c6[m
+Author: Leonardo Sonco <leonardokarling@hotmail.com>
+Date:   Sun Jul 3 15:18:05 2022 -0300
+
+    Bubble em c Pronto com valores de execução e media
+
+[33mcommit 612ee3a2e6be063f996f61bd084c0ab2294d1de6[m
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Fri Jul 1 18:15:18 2022 -0300
+
+    tentando bubblesort em python
+
+[33mcommit e6ea67f3d3d849226e1469f75535627f7a590cd8[m
+Author: Rodrigo Klein <rodrigoklein2010@gmail.com>
+Date:   Fri Jul 1 14:50:05 2022 -0300
+
+    bubblesort em C (checar funcionamento)
+
+[33mcommit c234cf6ab1f018aa8e2aa8dd47fad30eb9a180b3[m
+Author: Rodrigo Klein <79477834+Driklein@users.noreply.github.com>
+Date:   Thu Jun 30 20:07:28 2022 -0300
+
+    bubblesortc
+    
+    bubblesort c vejam se ta certo
+
+[33mcommit e414237f98d2df0383bb2088b22cb969c3e909e6[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Thu Jun 30 19:55:13 2022 -0300
+
+    relatorio criado na pasta C
+
+[33mcommit fa66ecdc38676ceca3ecc7004e54e50c767507ea[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Thu Jun 30 19:52:17 2022 -0300
+
+    Update README.md
+
+[33mcommit a9b3793c1d70b58860268e10282559657a7b111e[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Thu Jun 30 19:48:18 2022 -0300
+
+    criando pastas
+
+[33mcommit 74558e4c2f556190691ab3ba6160197b37ea5b5a[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Thu Jun 30 19:42:28 2022 -0300
+
+    agora vai
+
+[33mcommit 3962d41254986251b47e48f6c17d4eca2487d494[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Thu Jun 30 19:40:37 2022 -0300
+
+    criando pastas
+
+[33mcommit 7bc1acd932976e8d2187df6629cfcdc1d8bcc143[m
+Author: JuniorThume <juninhothume21@gmail.com>
+Date:   Thu Jun 30 19:37:08 2022 -0300
+
+    first commit
+
+[33mcommit ec54022ab5cb1398de4f74a8527c55f7570aa82e[m
+Author: JuniorThume <87200582+JuniorThume@users.noreply.github.com>
+Date:   Thu Jun 30 19:33:51 2022 -0300
+
+    Initial commit
