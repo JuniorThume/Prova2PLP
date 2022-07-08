@@ -44,7 +44,7 @@ Você encontrou obstáculos para implementar os algoritmos solicitados em alguma
     
    - Atividade 2 </br>
       - [x] C </br>
-      - [ ] Java </br>
+      - [x] Java </br>
       - [x] Javascript </br>
       - [ ] Pascal </br>
       - [ ] PHP </br>
