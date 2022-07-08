@@ -27,7 +27,7 @@ int bubbleSort(FILE* arq, int qtd){
     }
     t = clock()-t;
    
-    fprintf(arq,"%lf \n",qtd,(((double)t)/(CLOCKS_PER_SEC/1000))); // Milissegundos
+    fprintf(arq,"%lf \n",(((double)t)/(CLOCKS_PER_SEC/1000))); // Milissegundos
     
     return (((double)t)/(CLOCKS_PER_SEC/1000));
 }
@@ -38,7 +38,7 @@ int main(){
     FILE* arq;
     int i;
     double tempoMedio,tempo;
-    arq = fopen("tempo-bubblesort.txt","wt");
+    arq = fopen("tempo-bubblesort.csv","wt");
     for(i=0; i<1000 ; i++){
         tempo=bubbleSort(arq,i);
         tempoMedio = tempoMedio+tempo;     
