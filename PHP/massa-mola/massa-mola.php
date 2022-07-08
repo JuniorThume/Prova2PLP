@@ -1,6 +1,6 @@
 <?php
 
-function massa-mola(){
+function massa_mola(){
     $time_start = microtime(true);
 
     $TMAX = 100.0;
@@ -27,7 +27,7 @@ function massa-mola(){
     $time_end = microtime(true);
     $totalTime = round($time_end - $time_start, 3);
     for($f = 0; $f < $tam; $f++){
-        print_r($vel[$f] . "\n")
+        print_r($vel[$f] . "\n");
     }
     unset($vel);
     unset($pos);
