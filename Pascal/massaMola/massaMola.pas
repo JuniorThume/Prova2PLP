@@ -12,6 +12,7 @@ CONST
 
 
 var
+    
     x: REAL;
     vx: REAL;
     dx: REAL;

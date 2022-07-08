@@ -1,9 +1,12 @@
-program Bubble;
+program bubblesort;
 uses crt;
 
 var
-   v: array [1..10000] of integer;
-   I: integer;
+    v: array [1..10000] of integer;
+    I: integer;
+    inicio, final : Cardinal;
+    tempo : Extended;
+    tempoIndividual: Extended;
  
 
 procedure bubble_sort();
@@ -11,7 +14,7 @@ procedure bubble_sort();
 var
    I, J, troca: integer;
 begin
-    
+    //inicio := GetTickCount();
     for I := 1 to 10000 do
     begin
         for J := I+1 to 10000 do
@@ -24,13 +27,17 @@ begin
                 end;
             end;
     end;
+    //final := GetTickCount();
+    //tempoIndividual := (final - inicio);
     
 end;
  
  
 var K : integer;
+var tempImprim : Extended;
 begin
-    
+    //Assign(Myfile,'resultados-bubblesort.txt');
+    //Rewrite(MyFile);
     for K := 1 to 1000 do
     begin 
         randomize;
@@ -39,14 +46,16 @@ begin
             v[I]:= random(10000);
         end;
         // Impressão dos valores.
-        writeln('');
-        writeln('* Resultado *');
+        
         for I := 0 to 9999 do
         begin
-            writeln('posicao ', I, ': ', v[I]);
+
+            bubble_sort(); 
+            //Write(Myfile, tempImprim,'\n');
         end;
-        writeln('Execucao ', K)
+        
     end;
+    //Close(MyFile);
      // Ordenação
-     bubble_sort(); 
+     
 end.
