@@ -27,9 +27,9 @@ int bubbleSort(FILE* arq, int qtd){
     }
     t = clock()-t;
    
-    fprintf(arq,"%lf \n",(((double)t)/(CLOCKS_PER_SEC/1000))); // Milissegundos
+    fprintf(arq,"%lf \n",(((double)t/CLOCKS_PER_SEC)*1000)); // Milissegundos
     
-    return (((double)t)/(CLOCKS_PER_SEC/1000));
+    return (((double)t/CLOCKS_PER_SEC)*1000);
 }
 
 

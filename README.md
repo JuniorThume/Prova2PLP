@@ -44,13 +44,13 @@ Você encontrou obstáculos para implementar os algoritmos solicitados em alguma
     
    - Atividade 2 </br>
       - [x] C </br>
-      - [ ] Java </br>
+      - [x] Java </br>
       - [x] Javascript </br>
       - [ ] Pascal </br>
       - [ ] PHP </br>
       - [x] Python </br>
       - [ ] Lisp </br>
-      - [ ] Fortran95  </br>   
+      - [x] Fortran95  </br>   
     
    - Atividade 3
       - [x] C </br>
