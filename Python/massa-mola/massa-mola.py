@@ -40,18 +40,18 @@ def massa_mola(dt):
 
 def main():
    
-    arq = open("runtime_massa-molaa.txt","a")
+    
     for i in range(2):
         if(i==0):
             dt=0.01
         elif(i==1):
             dt=0.001
-        
+        arq = open("runtime_massa-molaa"+str(dt)+".csv","a")
         ini = time.time()
         massa_mola(dt)
         end = time.time()
         tempo = (end-ini)*1000 #Milissegundos
-        arq.write(str(dt)+"- Tempo de execucao " + str(tempo)+"\n")
+        arq.write(str(tempo)+"\n")
     arq.close()
         
 main()

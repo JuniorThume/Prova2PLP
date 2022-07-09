@@ -1,7 +1,0 @@
-0.01- Tempo de execucao 200.79421997070312
-0.01- Tempo de execucao 366.6093349456787
-0.001- Tempo de execucao 3199.653387069702
-0.01- Tempo de execucao 300.92620849609375
-0.001- Tempo de execucao 2110.6295585632324
-0.01- Tempo de execucao 203.60112190246582
-0.001- Tempo de execucao 2052.5264739990234
