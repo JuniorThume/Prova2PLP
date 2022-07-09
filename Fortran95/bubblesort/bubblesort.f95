@@ -2,7 +2,7 @@ Program bubble
     !USE PORTLIB
     implicit none
     integer :: i,n,aux,troca,j,aleatorio,k
-    integer, dimension(10000) :: vet
+    integer, dimension(10001) :: vet
     real :: x,ini,end,media,tempo
     n=10000
     ini=0.00
@@ -12,8 +12,10 @@ Program bubble
 
     open(1,file='runtime_bubbleSort.csv',status = 'old')
 
-    do k = 1, 1000
-        
+    do k = 1, 100
+        CALL CPU_TIME(ini)
+        call rseed()
+
         troca=1 
         do j=1,n
     
@@ -22,8 +24,7 @@ Program bubble
             vet(j)= aleatorio
         end do
 
-        CALL CPU_TIME(ini)
-        call rseed()
+        
         
         do while(troca/=0)
             troca = 0
@@ -46,7 +47,7 @@ Program bubble
         tempo = end-ini !Segundos
        ! print*,k,' end-ini ->',end-ini
 
-        write(1,"(f6.4)") tempo*1000 !- Transformado para milissegundos
+        write(1,*) tempo*1000 !- Transformado para milissegundos
     end do
 
     close(1)
