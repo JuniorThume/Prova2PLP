@@ -15,7 +15,7 @@ arq = open("tempo-bubblesort.csv","w")
 
 n=10000
 
-for i in range(1000):
+for i in range(100):
 
     vet= random.sample(range(n),n)
     inicio = time.time()
@@ -28,7 +28,7 @@ for i in range(1000):
     tempoMedia = tempoMedia+total
 
 
-tempoMedia = tempoMedia/1000 
+tempoMedia = tempoMedia/100 
 print(tempoMedia)
 arq.close()
 
