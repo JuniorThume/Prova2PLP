@@ -53,10 +53,9 @@ function bubbleSort($array)
 
 for($r = 0; $r < 1000; $r++){
   limpaArquivo();
-  $array = new SplFixedArray(10000);
+  $array = new SplFixedArray(100000);
   $array = insert_array($array);
   $array = bubbleSort($array);
-  //print_r($array);
   unset($array);
 }
 

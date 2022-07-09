@@ -1,10 +1,30 @@
 <?php
 
-function massa_mola(){
-    $time_start = microtime(true);
+function gravarArrays($array1,$array2,$tmax,$dt){
+    for($g = 0;$g < $tmax;$g++){
+        if($dt == 0.01){
+            gravar("../../../../Resultados-MassaMola/PHP/resultado-massaMola01.csv",$array1[$g] . " " . $array2[$g] . "\n");
+        }else{
+            gravar("../../../../Resultados-MassaMola/PHP/resultado-massaMola001.csv",$array1[$g] . " " . $array2[$g] . "\n");
+        }
+        
+    }
+}
+function gravar($arq,$texto){
+	$fp = fopen($arq, "w");
+	fwrite($fp, $texto."\n");
+	fclose($fp);
+}
 
-    $TMAX = 100.0;
-    $dt = 0.001;
+function limpaArquivo($arq){
+	$fp = fopen($arq, "w");
+	fwrite($fp, "");
+	fclose($fp);
+}
+
+function massa_mola($dt){
+
+    $TMAX = 100000.0;
     $x = -1.0;
     $vx = 0.0;
     $dx;
@@ -16,7 +36,7 @@ function massa_mola(){
     $vel = new SplFixedArray($tam);
     $pos = new SplFixedArray($tam);
 
-    for($r = 0; $r < 100; $r++){
+    for($r = 0; $r < $TMAX; $r++){
         $dvx = -($k/$m)*$x*$dt;
         $vx = $vx+$dvx;
         $dx = $vx*$dt;
@@ -24,18 +44,31 @@ function massa_mola(){
         $pos[$r]=$x;
         $vel[$r]=$vx;
     }
-    $time_end = microtime(true);
-    $totalTime = round($time_end - $time_start, 3);
-    for($f = 0; $f < $tam; $f++){
-        print_r($vel[$f] . "\n");
-    }
+   
+    gravarArrays($vel,$pos,$TMAX,$dt);
     unset($vel);
     unset($pos);
 
 }
 
 
+limpaArquivo("runtime-massa_mola.txt");
 
+for($t = 0; $t < 2; $t++){
+    
+    if($t == 0){
+        $op = 0.01;
+    }else{
+        $op = 0.001;
+    }
+    $time_start = microtime(true);
+    massa_mola($op);
+    $time_end = microtime(true);
+    $totalTime = round($time_end - $time_start, 3);
+    gravar("runtime-massa_mola.txt",$totalTime);
+    
+    
+}
 
 
 
