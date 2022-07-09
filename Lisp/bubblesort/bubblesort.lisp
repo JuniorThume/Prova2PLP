@@ -1,28 +1,82 @@
 
-
 (defun listaEmbaralhada ()
   (let ((lista ()))
-    (dotimes (i 10000)
-       (setf lst (cons (random 10000) lista)))
-   lst))
-
-(defun swap (lista i j)
-    (setq aux (aref lista i))
-    (setf (aref lista i) (aref lista j))
-    (setf (aref lista j) aux)
+    (dotimes (i 100)
+       (setf lista (cons (random 1000) lista))) lista)
 )
 
 (defun bubblesort (lista)
-    (do ((i (length lista) (- i 1))) (= i 0)
-        (do ((j 0 (+ j 1))) ((= j (- i 1)))
-            (if (> (aref lista j) (aref lista (+ j 1)))
-                (swap lista j (+ j 1))
+ 
+    (do (( i 0 (+ i 1))) (( = i 100 ))
+        (do (( j 0 (+ j 1))) (( = j 99))
+           (if (>= (nth j lista) (nth i lista))
+                (progn
+                (setq aux (nth i lista))
+                (setf (nth i lista) (nth j lista))
+                (setf (nth j lista) aux)
+                 )
+         
+               
             )
         )
     )
 )
 
 (defvar minhaLista(listaEmbaralhada))
-(bubblesort minhaLista)
+(defvar tempoDecorrido 0)
+(defvar tempoDoLoop 0)
+;(defvar tempoMedio 0)
 
-(write minhaLista)
+(defvar i 0)
+
+;limpa o arquivo csv
+(with-open-file (str "runtimeLisp.csv"
+                :direction :output
+                :if-exists :supersede
+                :if-does-not-exist :create)
+        (format str "")
+)
+
+(time
+    (loop
+    
+    (setq minhaLista(listaEmbaralhada))
+    (terpri)
+    (terpri)
+    (princ "Valores não ordenados: ")
+    (write minhaLista)
+    (terpri)
+    (princ "Valores ordenados: ")
+    (bubblesort minhaLista)
+    (write minhaLista)
+    (terpri)
+
+    (princ "Tempo de execução: ")
+    (setq tempoDecorrido (get-internal-run-time))
+    (terpri)
+    (setq tempoDoLoop (- tempoDecorrido tempoDoLoop))
+    (write tempoDoLoop)
+
+    (with-open-file (str "runtimeLisp.csv"
+                :direction :output
+                :if-exists :append
+                :if-does-not-exist :create)
+        (format str "~d~%" tempoDoLoop)
+    )
+
+    (if (> i 998)
+        (return)
+    )
+    (setf i (+ i 1))
+    )
+
+    ;(setf tempoMedio (/ tempoDecorrido 10))
+    ;(terpri)
+    ;(terpri)
+    ;(princ "Tempo médio de execução: ")
+    ;(write tempoMedio)
+
+)
+
+
+
