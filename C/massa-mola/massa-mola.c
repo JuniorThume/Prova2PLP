@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define TMAX 100.0
+#define TMAX 100000.0
 
 
 void escreve_saida(float *vet, float *vet1, float dtAtual);
