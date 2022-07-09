@@ -2,9 +2,9 @@ Program bubble
     !USE PORTLIB
     implicit none
     integer :: i,n,aux,troca,j,aleatorio,k
-    integer, dimension(1000) :: vet
+    integer, dimension(10000) :: vet
     real :: x,ini,end,media,tempo
-    n=1000
+    n=10000
     ini=0.00
     end=0.00
     tempo=0.0
@@ -14,11 +14,7 @@ Program bubble
 
     do k = 1, 1000
         
-        troca=1
-
-        CALL CPU_TIME(ini)
-        call rseed()
-        
+        troca=1 
         do j=1,n
     
             call random_number(x)
@@ -26,6 +22,9 @@ Program bubble
             vet(j)= aleatorio
         end do
 
+        CALL CPU_TIME(ini)
+        call rseed()
+        
         do while(troca/=0)
             troca = 0
             do i=1,n
@@ -38,6 +37,7 @@ Program bubble
                 
                 end if
             end do
+
         end do
     
         CALL CPU_TIME(end)
