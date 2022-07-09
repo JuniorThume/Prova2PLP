@@ -4,11 +4,9 @@ import java.util.ArrayList;
 
 public class executa_mm {
 
-    public void executa_massa_mola() throws IOException{
-        float TMAX = 100.0f;
-        float dt = 0.001f;
-
-        long tempoInicial = System.currentTimeMillis();
+    public void executa_massa_mola(float dtAtual) throws IOException{
+        float TMAX = 100000.0f;
+        
         float x = -1.0f;
         float vx = 0.0f;
         ArrayList<Float> pos = new ArrayList<Float>();
@@ -19,19 +17,18 @@ public class executa_mm {
         float m = 1.0f;
         float k = 1.0f;
     
-        for (t=0.0f; t < TMAX ;t+=dt){
-            dvx = -(k/m)*x*dt;
+        for (t=0.0f; t < TMAX ;t+=dtAtual){
+            dvx = -(k/m)*x*dtAtual;
             vx = vx+dvx;
-            dx = vx*dt;
+            dx = vx*dtAtual;
             x = x+dx;
             pos.add(x);
             vel.add(vx);
         }
-        long tempoFinal = System.currentTimeMillis();
-        long tempoTotal = (tempoFinal - tempoInicial);
+        
         escreve_arquivo saida = new escreve_arquivo();
-        saida.limpaArquivo();
-        saida.escreveArquivo(vel, pos);
-        System.out.println("tempo total de execução foi: " + tempoTotal);
+        saida.limpaArquivo(dtAtual);
+        saida.escreveArquivo(vel, pos, dtAtual);
+        
     }
 }

@@ -4,7 +4,18 @@ import java.io.IOException;
 
 public class massa_mola {
     public static void main(String[] args) throws IOException{
+        float val_dt[] = new float[2];
+        val_dt[0]= (float) 0.01;
+        val_dt[1]= (float) 0.001;
         executa_mm runMM = new executa_mm();
-        runMM.executa_massa_mola();
+        for(int i=0; i<val_dt.length; i++){
+            long tempoInicial = System.currentTimeMillis();
+            runMM.executa_massa_mola(val_dt[i]);
+            long tempoFinal = System.currentTimeMillis();
+            long tempoTotal = (tempoFinal - tempoInicial);
+            System.out.println("MASSA MOLA: "+tempoTotal);
+        }
+        
+        
     }
 }
