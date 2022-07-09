@@ -9,7 +9,7 @@ function insert_array($arr) {
 }
 function gravar($texto){
 	$arquivo = "resultado-bubblesort.csv";
-	$fp = fopen($arquivo, "w");
+	$fp = fopen($arquivo, "a+");
 	fwrite($fp, $texto."\n");
 	fclose($fp);
 }
@@ -40,9 +40,9 @@ function bubbleSort($array)
      }
   }
   $time_end = microtime(true);
-  $totalTime = round($time_end - $time_start, 3);
+  $totalTime = round($time_end - $time_start, 3)*1000;
   gravar($totalTime);
-  print_r($totalTime . "\n");
+  //print_r($totalTime . "\n");
   return $array;
 }
 
@@ -50,10 +50,10 @@ function bubbleSort($array)
 
 
 
-
-for($r = 0; $r < 1000; $r++){
-  limpaArquivo();
-  $array = new SplFixedArray(100000);
+limpaArquivo();
+for($r = 0; $r < 100; $r++){
+  
+  $array = new SplFixedArray(10000);
   $array = insert_array($array);
   $array = bubbleSort($array);
   unset($array);
