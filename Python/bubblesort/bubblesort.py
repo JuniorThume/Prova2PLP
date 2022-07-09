@@ -1,7 +1,6 @@
 import random
 import time
 
-
 def bubbleSort(vet) :
     n=len(vet)
     for i in range(n-1):
