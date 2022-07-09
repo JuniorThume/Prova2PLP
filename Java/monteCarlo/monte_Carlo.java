@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.*;
 
 
-public class monteCarlo{
+public class monte_Carlo{
 
     public static float sorteio(){
         float min= 0.0f;
@@ -33,13 +33,41 @@ public class monteCarlo{
     }
 
     public static void main(String args[]) throws IOException{
-
+        monte_Carlo mc = new monte_Carlo();
         int cont=0, dentro=0, fora=0;
         float x,y,ponto,valor_pi;
         float aux1,aux2;
-
+        mc.limpaArquivo();
         long start = System.currentTimeMillis();
+        int aux = 0;
 
+        while(aux < 100){
+            while(cont < 1000000){
+                x = 2 * sorteio() -1;
+                y = 2 * sorteio() -1;
+    
+                ponto = x * x + y * y;
+    
+                if(ponto<=1)
+                    dentro++;
+                else   
+                    fora++;
+                cont++;
+            }
+    
+            aux1 = 4 * dentro;
+            aux2 = dentro + fora;
+    
+            valor_pi = aux1 / aux2;
+    
+            long time = System.currentTimeMillis() - start;
+    
+            System.out.println("Valor simulado de pi: "+ valor_pi);
+            System.out.println("Tempo de execução: "+ time);
+            mc.escreveArquivo(time);
+            aux++;
+
+        }
         while(cont < 1000000){
             x = 2 * sorteio() -1;
             y = 2 * sorteio() -1;
@@ -62,12 +90,8 @@ public class monteCarlo{
 
         System.out.println("Valor simulado de pi: "+ valor_pi);
         System.out.println("Tempo de execução: "+ time);
-
-        FileWriter arq = new FileWriter("Java/monteCarlo/runtime-monteCarlo.csv", true);
+        mc.escreveArquivo(time);
         
-        arq.append((time)+"\n");
-        
-        arq.close();
 
 
 
