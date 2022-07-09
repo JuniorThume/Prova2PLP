@@ -1,14 +1,11 @@
-
 program bubblesort;
-uses crt;
-uses DateUtils;
+uses crt, DateUtils,sysutils;
 
 var
     v: array [1..10000] of integer;
     I: integer;
     inicio, final : Cardinal;
     tempo : Extended;
-    tempoIndividual: Extended;
     FromTime, ToTime: TDateTime;
     DiffMinutes: Integer;
  
@@ -16,9 +13,9 @@ var
 procedure bubble_sort();
 
 var
-   I, J,P, troca: integer;
+   I, J, troca: integer;
 begin
-    FromTime := Now;
+    
     for I := 1 to 10000 do
     begin
         for J := I+1 to 10000 do
@@ -31,40 +28,36 @@ begin
                 end;
             end;
     end;
-    ToTime := Now;
-    DiffMinutes := MinutesBetween(ToTime,FromTime);
     
-    for P := 0 to 9999 do
-    begin
-        writeln(DiffMinutes);
-    end;
     
 end;
  
  
-var K : integer;
-var tempImprim : Extended;
+var K ,I: integer;
 begin
     //Assign(Myfile,'resultados-bubblesort.txt');
     //Rewrite(MyFile);
-    for K := 1 to 1000 do
+    for K := 1 to 100 do
     begin 
         randomize;
-        for I := 1 to 100 do
+        for I := 1 to 10000 do
         begin
             v[I]:= random(10000);
         end;
         // Impressão dos valores.
         
-        for I := 0 to 9999 do
-        begin
-
-            bubble_sort(); 
-            
-            //Write(Myfile, tempImprim,'\n');
-        end;
+        
+        FromTime := now;
+        
+        bubble_sort(); 
+        
+        
+        ToTime := now;
+        DiffMinutes := MilliSecondsBetween(ToTime,FromTime);
+        writeln(DiffMinutes);
+        
+        
     end;
-    //Close(MyFile);
-     // Ordenação
+   
      
 end.
