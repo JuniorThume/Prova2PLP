@@ -1,5 +1,7 @@
+
 program bubblesort;
 uses crt;
+uses DateUtils;
 
 var
     v: array [1..10000] of integer;
@@ -7,14 +9,16 @@ var
     inicio, final : Cardinal;
     tempo : Extended;
     tempoIndividual: Extended;
+    FromTime, ToTime: TDateTime;
+    DiffMinutes: Integer;
  
 
 procedure bubble_sort();
 
 var
-   I, J, troca: integer;
+   I, J,P, troca: integer;
 begin
-    //inicio := GetTickCount();
+    FromTime := Now;
     for I := 1 to 10000 do
     begin
         for J := I+1 to 10000 do
@@ -27,8 +31,13 @@ begin
                 end;
             end;
     end;
-    //final := GetTickCount();
-    //tempoIndividual := (final - inicio);
+    ToTime := Now;
+    DiffMinutes := MinutesBetween(ToTime,FromTime);
+    
+    for P := 0 to 9999 do
+    begin
+        writeln(DiffMinutes);
+    end;
     
 end;
  
@@ -41,7 +50,7 @@ begin
     for K := 1 to 1000 do
     begin 
         randomize;
-        for I := 1 to 10000 do
+        for I := 1 to 100 do
         begin
             v[I]:= random(10000);
         end;
@@ -51,9 +60,9 @@ begin
         begin
 
             bubble_sort(); 
+            
             //Write(Myfile, tempImprim,'\n');
         end;
-        
     end;
     //Close(MyFile);
      // Ordenação
