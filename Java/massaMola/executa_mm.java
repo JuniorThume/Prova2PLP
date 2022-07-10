@@ -26,9 +26,5 @@ public class executa_mm {
             vel.add(vx);
         }
         
-        escreve_arquivo saida = new escreve_arquivo();
-        saida.limpaArquivo(dtAtual);
-        saida.escreveArquivo(vel, pos, dtAtual);
-        
     }
 }
