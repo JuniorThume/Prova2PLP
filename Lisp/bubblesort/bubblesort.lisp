@@ -30,7 +30,7 @@
 (defvar i 0)
 
 ;limpa o arquivo csv
-(with-open-file (str "runtimeLisp.csv"
+(with-open-file (str "runtime-bublesort.csv"
                 :direction :output
                 :if-exists :supersede
                 :if-does-not-exist :create)
@@ -57,7 +57,7 @@
     (setq tempoDoLoop (- tempoDecorrido tempoDoLoop))
     (write tempoDoLoop)
 
-    (with-open-file (str "runtimeLisp.csv"
+    (with-open-file (str "runtime-bubblesort.csv"
                 :direction :output
                 :if-exists :append
                 :if-does-not-exist :create)
@@ -69,13 +69,6 @@
     )
     (setf i (+ i 1))
     )
-
-    ;(setf tempoMedio (/ tempoDecorrido 10))
-    ;(terpri)
-    ;(terpri)
-    ;(princ "Tempo médio de execução: ")
-    ;(write tempoMedio)
-
 )
 
 
