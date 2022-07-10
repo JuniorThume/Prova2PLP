@@ -38,13 +38,8 @@ Program bubble
         
         CALL CPU_TIME(end)
         tempo = end-ini
-        write(1,*) "Execucao ",k
-        write(1,*) "Valor simulado de pi :",valor_pi
         
-        write(1,*) "Tempo de execucao em ms : ",tempo*1000
-        write(1,*) "############"
-        
-        
+        write(1,*) tempo*1000
     
     end do
     close(1)
