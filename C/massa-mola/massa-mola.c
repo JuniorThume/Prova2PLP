@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define TMAX 100000.0
+#define TMAX 1000.0f
 
 
 void escreve_saida(float *vet, float *vet1, float dtAtual);
@@ -9,7 +9,7 @@ void escreve_saida(float *vet, float *vet1, float dtAtual);
 float massa_mola(float dt){
     clock_t time;
     time = clock();
-    int i=-1;
+    int i=0;
     float x = -1.0;
     float vx = 0.0;
     int tam_vet = TMAX/dt;
@@ -26,8 +26,10 @@ float massa_mola(float dt){
         vx = vx+dvx;
         dx = vx*dt;
         x = x+dx;
-        pos[++i]=x;
+        
+        pos[i]=x;
         vel[i]=vx;
+        i+=1;
     }
     time = clock()-time;
     escreve_saida(vel,pos,dt);
@@ -53,12 +55,17 @@ void escreve_saida(float *vet, float *vet1, float dtAtual){
 
 int main(){
     FILE* temp;
-    float tam[2]= {0.01,0.001};
+    float tam[2];
+    tam[0] = 0.01f;
+    tam[1] = 0.001f;
     int l;
+    float runtime;
     temp = fopen("runtime-massaMola.txt","wt");
     for(l=0; l < 2; l++){
+        printf("Passei 1\n");
         printf("%d\n",l);
-        float runtime = massa_mola(tam[l]);
+        
+        runtime = massa_mola(tam[l]);
         fprintf(temp,"Tempo de execucao %f\n", runtime);
         
     }   

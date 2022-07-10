@@ -1,2 +1,0 @@
-Tempo de execucao 0.000000
-Tempo de execucao 6.000000

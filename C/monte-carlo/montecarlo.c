@@ -16,7 +16,7 @@ int main(){
     float x,y,ponto,sorteio, valor_pi;
     FILE* arq;
     arq = fopen("runtime-montecarlo.txt","wt");
-    fprintf(arq,"Runtime Monte Carlo\n");   
+    //fprintf(arq,"Runtime Monte Carlo\n");   
     
     while(cont < 100){
         tempo = clock();
@@ -44,10 +44,10 @@ int main(){
 
         valor_pi = aux1 / aux2;
         
-        fprintf(arq,"Execucao  %d\n", cont);   
-        fprintf(arq,"Valor simulado de pi %f\n", valor_pi);   
-        fprintf(arq,"Tempo de execucao %f ms\n", ((clock() - tempo) / (double)CLOCKS_PER_SEC)*1000);
-        fprintf(arq,"###################\n");      
+        //fprintf(arq,"Execucao  %d\n", cont);   
+        //fprintf(arq,"Valor simulado de pi %f\n", valor_pi);   
+        fprintf(arq,"%f\n", ((clock() - tempo) / (double)CLOCKS_PER_SEC)*1000);
+        //fprintf(arq,"###################\n");      
         cont++;
     }
 
