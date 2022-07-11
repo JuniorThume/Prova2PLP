@@ -13,7 +13,7 @@ Program massa_mola
     real, dimension(100000000) :: pos_01
 
     
-    TMAX = 1000000.0
+    TMAX = 100000.0
     contador=0
     ini=0.00
     end=0.00
