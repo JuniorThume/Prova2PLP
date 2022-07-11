@@ -6,8 +6,8 @@
 
 ;não consegui criar vetores com o tam_vet como TMAX/dt
 
-(setf vel (make-array '(10000000)))
-(setf pos (make-array '(10000000)))
+(setf vel (make-array '(100000)))
+(setf pos (make-array '(100000)))
 (defvar dx 0.0)
 (defvar dvx 0.0)
 (defvar u 0.0)  ; não consegui usar o "t" como variavel, usei o "u" no lugar
@@ -16,8 +16,6 @@
 (defvar aux 0)
 (defvar time 0)
 (defvar i 0)
-(defvar tempoDecorrido 0)
-(defvar tempoDoLoop 0)
 
 
 ;limpa o arquivo csv
@@ -28,12 +26,6 @@
         (format str "")
 )
 ;limpa o arquivo csv
-(with-open-file (str "runtime-massa-mola.csv"
-                :direction :output
-                :if-exists :supersede
-                :if-does-not-exist :create)
-        (format str "")
-)
 
 
 (defun massa_mola()
@@ -57,25 +49,11 @@
         (format output "~d " (aref pos i))
         (format output "~d~% " (aref vel i))
         )
-        
-        (setq tempoDecorrido (get-internal-run-time))
-        (setq tempoDoLoop (- tempoDecorrido tempoDoLoop))
 
-        (with-open-file (str "runtime-massa-mola.csv"
-                    :direction :output
-                    :if-exists :append
-                    :if-does-not-exist :create)
-            (format str "~d~%" tempoDoLoop)
-        )
+        (when (= i TMAX) (return))
 
-        (when (= i 999999) (return))
-
-        (setf i (+ i 1))
-
-        
-        
+        (setf i (+ i 1))  
     )
-    
 )
 (time
     (massa_mola)
