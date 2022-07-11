@@ -1,14 +1,7 @@
 from fileinput import close
 import time
 
-TMAX = 1000000.0
-
-def escreve(vel,pos,dt):
-    arq = open("../../../../Resultados-MassaMola/Python/Resultados-massa"+str(dt)+".csv","w")
-    for i in range(int(TMAX/dt)):
-        arq.write("vel - "+str(vel[i])+" pos- "+ str(pos[i])+"\n")
-    arq.close()
-
+TMAX = 100000.0
 
 
 def massa_mola(dt):
@@ -34,24 +27,14 @@ def massa_mola(dt):
         t = t+dt
         if(t >= TMAX) :
             break
-    
-    escreve(vel,pos,dt)
-    
 
 def main():
-   
-    
-    for i in range(2):
-        if(i==0):
-            dt=0.01
-        elif(i==1):
-            dt=0.001
-        arq = open("runtime_massa-molaa"+str(dt)+".csv","a")
-        ini = time.time()
-        massa_mola(dt)
-        end = time.time()
-        tempo = (end-ini)*1000 #Milissegundos
-        arq.write(str(tempo)+"\n")
+    arq = open("../../../runtime_massa-mola-massaMola0.01_python.csv","w")
+    ini = time.time()
+    massa_mola(0.01)
+    end = time.time()
+    tempo = (end-ini)*1000 #Milissegundos
+    arq.write(str(tempo)+"\n")
     arq.close()
         
 main()
