@@ -29,7 +29,7 @@ def massa_mola(dt):
             break
 
 def main():
-    arq = open("../../../runtime_massa-mola-massaMola0.01_python.csv","w")
+    arq = open("./runtime_massa-mola-massaMola0.01_python.csv","w")
     ini = time.time()
     massa_mola(0.01)
     end = time.time()
