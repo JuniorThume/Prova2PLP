@@ -9,7 +9,6 @@ Program bubble
     
    
     open(1,file='runtime_monteCarlo.txt',status = 'old')
-    write(1,*) "RUN TIME MONTE CARLO"
     
     call rseed()
     do k = 0, 100

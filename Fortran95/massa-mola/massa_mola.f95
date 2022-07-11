@@ -12,11 +12,6 @@ Program massa_mola
     real, dimension(100000000) :: vel_01
     real, dimension(100000000) :: pos_01
 
-    !real, dimension(1000000000) :: vel_001
-    !real, dimension(1000000000) :: pos_001
-
-    !real, dimension(100000000000) :: vel_00001
-    !real, dimension(100000000000) :: pos_00001
     
     TMAX = 1000000.0
     contador=0
@@ -26,7 +21,7 @@ Program massa_mola
     media=0.0
     i=0
     
-    open(1,file='runtime_massaMola01.txt',status = 'old')
+    open(1,file='runtime_massaMola01.csv',status = 'old')
    
     
     do i=0,1
@@ -43,7 +38,7 @@ Program massa_mola
             comparador = TMAX*100
             CALL CPU_TIME(ini)
             call rseed()
-                dt=1.01
+                dt=1
                 do while(contador==0)
                     
                     dvx = -(k/m)*x*dt
