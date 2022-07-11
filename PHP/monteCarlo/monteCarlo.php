@@ -1,39 +1,36 @@
 <?php
 
-function gravar($texto,$valor){
-    $arquivo = "runtime_monteCarlo.csv";
-    $fp = fopen($arquivo, "w");
+function gravar($arquivo,$texto){
+
+    $fp = fopen($arquivo, "a+");
     fwrite($fp ,$texto."\n");
     fclose($fp);
 }
 
-function limpaArquivo(){
-    $arquivo = "runtime_monteCarlo.csv";
+function limpaArquivo($arquivo){
     $fp = fopen($arquivo, "w");
     fwrite($fp, "");
     fclose($fp);
 }
 
-function massa_mola(){
+function monte_carlo(){
     
-    $time_start = microtime(true);
-    
-    $cont = 0;
     $dentro = 0;
     $fora = 0;
     $ponto = 0.0;
-    $x;
-    $y;
-    $i;
-    $aux1;
-    $aux2;
-    $valor_pi;
-    $sorteio;
-    while ( $cont < 100){
+    $x = 0.0;
+    $y = 0.0;
+    $i = 0.0;
+    $aux1 = 0.0;
+    $aux2 = 0.0;
+    $valor_pi = 0.0;
+    $sorteio = 0.0;
+
+    
         for($i = 0; $i < 1000000; $i++){
-            $sorteio = rand(-10000,10000)/10000 . "\n";
+            $sorteio = rand(0,10000)/10000;
             $x = 2 * $sorteio-1;
-            $sorteio = rand(-10000,10000)/10000 . "\n";
+            $sorteio = rand(0,10000)/10000;
             $y = 2 * $sorteio-1;
 
             $ponto = $x*$x + $y*$y;
@@ -48,19 +45,24 @@ function massa_mola(){
         $aux2 = $dentro+$fora;
         $valor_pi = $aux1/$aux2;
 
-        $time_end = microtime(true);
-        $totalTime = round($time_end - $time_start, 3);
-
-        $texto = "Tempo de Execuação".(string)$totalTime;
-        $texto = $texto." ";
-        $texto = $texto.(string)$valor_pi;
-        gravar($texto);
-        $cont = $cont +1;
+        
     }
     
-}
+$arr = array();
 
-limpaArquivo()
-massa_mola()
+
+
+limpaArquivo("runtime-monte-carlo.csv");
+$cont = 0;
+while ($cont < 100){
+    $time_start = microtime(true);
+    monte_carlo();
+    $time_end = microtime(true);
+    $totalTime = (round($time_end - $time_start , 3))*1000;
+    
+    gravar("runtime-monte-carlo.csv",$totalTime);
+    
+    $cont = $cont +1;
+}
 
 ?>
