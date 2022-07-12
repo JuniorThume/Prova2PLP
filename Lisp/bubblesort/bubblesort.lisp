@@ -1,4 +1,6 @@
 
+(defvar i 0)
+
 (defun listaEmbaralhada ()
   (let ((lista ()))
     (dotimes (i 1000)
@@ -21,53 +23,23 @@
 )
 
 (defvar minhaLista(listaEmbaralhada))
-;(defvar tempoDecorrido 0)
-;(defvar tempoDoLoop 0)
-;(defvar tempoMedio 0)
-
-(defvar i 0)
-
-;limpa o arquivo csv
-;(with-open-file (str "runtime-bubblesort.csv"
-;                :direction :output
-;                :if-exists :supersede
-;                :if-does-not-exist :create)
-;        (format str "")
-;)
 
 (time
     (loop
+        
+        (if (= i 1) (return))
     
-    (setq minhaLista(listaEmbaralhada))
-    ;(terpri)
-    ;(terpri)
-    ;(princ "Valores não ordenados: ")
-    ;(write minhaLista)
-    ;(terpri)
-    ;(princ "Valores ordenados: ")
+        (setq minhaLista(listaEmbaralhada))
 
-    (bubblesort minhaLista)
+        ;(terpri)
+        ;(princ "Valores não ordenados: ")
+        ;(write minhaLista)
+        ;(terpri)
+        ;(princ "Valores ordenados: ")
 
-    ;(write minhaLista)
-    ;(terpri)
+        (bubblesort minhaLista)
 
-    ;(princ "Tempo de execução: ")
-    ;(setq tempoDecorrido (get-internal-run-time))
-    ;(terpri)
-    ;(setq tempoDoLoop (- tempoDecorrido tempoDoLoop))
-    ;(write tempoDoLoop)
-
-    ;(with-open-file (str "runtime-bubblesort.csv"
-    ;            :direction :output
-    ;            :if-exists :append
-    ;            :if-does-not-exist :create)
-    ;    (format str "~d~%" tempoDoLoop)
-    ;)
-
-    (if (= i 100)
-        (return)
-    )
-    (setf i (+ i 1))
+        (setf i (+ i 1))
     )
 )
 

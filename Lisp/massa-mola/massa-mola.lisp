@@ -1,37 +1,52 @@
 
-(defvar TMAX 100000.0)
-(defvar dt 0.01)
-(defvar x -1.0)
-(defvar vx 0.0)
 
-;não consegui criar vetores com o tam_vet como TMAX/dt
-
-(setf vel (make-array '(100000)))
-(setf pos (make-array '(100000)))
-(defvar dx 0.0)
-(defvar dvx 0.0)
-(defvar u 0.0)  ; não consegui usar o "t" como variavel, usei o "u" no lugar
-(defvar m 1.0)  ; creio que seja uma letra reservada da linguagem
-(defvar k 1.0)
-(defvar aux 0)
-(defvar time 0)
-(defvar i 0)
+(defvar dt1 0.01)
+(defvar dt2 0.001)
 
 
-;limpa o arquivo csv
-(with-open-file (str "resultados-massa-mola.csv"
+
+(defvar file1 "resultado-massa-mola0.01.csv")
+(defvar file2 "resultado-massa-mola0.001.csv")
+
+;limpa os arquivos csv
+(with-open-file (str file1
                 :direction :output
                 :if-exists :supersede
                 :if-does-not-exist :create)
         (format str "")
 )
-;limpa o arquivo csv
+
+;limpa os arquivos csv
+(with-open-file (str file2
+                :direction :output
+                :if-exists :supersede
+                :if-does-not-exist :create)
+        (format str "")
+)
 
 
-(defun massa_mola()
+(defun massa_mola(dt file)
+    (defvar x -1.0)
+    (defvar vx 0.0)
 
+
+    ;não consegui criar vetores com o tam_vet como TMAX/dt, inseri o valor manualmente
+    (setf vel (make-array '(100000)))
+    (setf pos (make-array '(100000)))
+    (defvar dx 0.0)
+    (defvar dvx 0.0)
+    (defvar u 0.0)  ; não consegui usar o "t" como variavel, usei o "u" no lugar
+    (defvar m 1.0)  ; creio que seja uma letra reservada da linguagem
+    (defvar k 1.0)
+    (defvar aux 0)
+    (defvar time 0)
+    (defvar i 0)
+
+    (setf i 0)
+    
     (loop 
-        (setf u (+ u dt))
+        (when (= i 99999) (return))
+
         (setf dvx (* (* (- 0 (/ k m)) x) dt))
         (setf vx (+ vx dvx))
         (setf dx (* vx dt))
@@ -41,24 +56,35 @@
         (setf (aref pos aux) x)
         (setf (aref vel i) vx)
 
-        (with-open-file (output "resultados-massa-mola.csv" 
+        (with-open-file (str file
         :direction :output 
         :if-does-not-exist :create 
         :if-exists :append)
 
-        (format output "~d " (aref pos i))
-        (format output "~d~% " (aref vel i))
+        (format str "~d " (aref pos i))
+        (format str "~d~% " (aref vel i))
         )
 
-        (when (= i TMAX) (return))
-
-        (setf i (+ i 1))  
+        (setf u (+ u dt))
+        (setf i (+ i 1))
     )
-)
-(time
-    (massa_mola)
     
 )
+
+(terpri)
+(princ "Dt 0.01:")
+(time
+    (massa_mola dt1 file1)
+)
+
+(terpri)
+(princ "Dt 0.001:")
+(time
+    (massa_mola dt2 file2)
+)
+
+
+
 
 
 

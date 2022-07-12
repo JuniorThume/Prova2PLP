@@ -8,7 +8,6 @@
 (defvar y 0.0)
 (defvar ponto 0.0)
 (defvar valor_pi 0.0)
-(defvar outroCont 0)
 
 ;limpa o arquivo csv
 (with-open-file (str "resultados-montecarlo.csv"
@@ -18,8 +17,10 @@
         (format str "")
 )
 
-(time
+(defun monte-carlo()
     (loop 
+
+        (if (= cont 1000000) (return))
 
         (setf *random-state* (make-random-state t))
         (setf sorteio (random 1.0))
@@ -43,7 +44,7 @@
         )
 
         (setf cont (+ cont 1))
-        (if (= cont 1000000) (return))
+        
     )
 
     (setf fora (- fora 1.0)); denominador fica em 100001
@@ -58,3 +59,9 @@
             (format str "~d~%" valor_pi)
     )
 )
+
+(time
+    (monte-carlo)
+)
+
+
