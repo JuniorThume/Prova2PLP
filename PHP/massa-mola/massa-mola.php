@@ -19,8 +19,8 @@ function limpaArquivo($arq){
 }
 
 function massa_mola($dt){
-
-    $TMAX = 100000.0;
+    
+    $TMAX = 10000.0;
     $x = -1.0;
     $vx = 0.0;
     $dx;
@@ -29,38 +29,46 @@ function massa_mola($dt){
     $m = 1.0;
     $k = 1.0;
 
-    $pos = array();
-    $vel = array();
+    $pos = 0.0;
+    $vel = 0.0;
     
-
     for($r = 0; $r < $TMAX; $r++){
         $dvx = -($k/$m)*$x*$dt;
         $vx = $vx+$dvx;
         $dx = $vx*$dt;
         $x = $x+$dx;
-        $pos[] = $x;
-        $vel[] = $vx;
-        //$pos[$r]=$x;
-        //$vel[$r]=$vx;
+        $pos = $x;
+        $vel = $vx;
+        
     }
    
-    gravarArrays($vel,$pos);
-    print_r($pos);
-    unset($vel);
-    unset($pos);
+    //gravarArrays($vel,$pos);
+    //print_r($pos);
+    //unset($vel);
+    //unset($pos);
 
 }
 
 
-limpaArquivo("runtime-massa_mola.txt");
-limpaArquivo("resultado-massaMola01.csv");
+limpaArquivo("runtime-massa_mola01.txt");
+limpaArquivo("runtime-massa_mola001.txt");
 
+
+    for($i = 0; $i < 100;$i++){
+        $time_start01 = microtime(true);
+        massa_mola(0.01);
+        $time_end01 = microtime(true);
+        $totalTime01 = round($time_end01 - $time_start01, 3);
+        gravar("runtime-massa_mola01.txt",$totalTime01);
+
+        $time_start001 = microtime(true);
+        massa_mola(0.001);
+        $time_end001 = microtime(true);
+        $totalTime001 = round($time_end001 - $time_start001, 3);
+        gravar("runtime-massa_mola001.txt",$totalTime001);
+        
+    }
     
-    $time_start = microtime(true);
-    massa_mola(0.01);
-    $time_end = microtime(true);
-    $totalTime = round($time_end - $time_start, 3);
-    gravar("runtime-massa_mola.txt",$totalTime);
 
 
 

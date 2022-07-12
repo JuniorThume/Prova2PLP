@@ -7,66 +7,98 @@ Program massa_mola
     real(kind=Largereal_K) :: comparador
     integer :: i,n,aux,contador,j,aleatorio,r
     real :: x,vx,dx,dvx,t,m,k,TMAX
-    real :: ini,end,media,tempo
-    real :: dt,teste
-    real, dimension(100000000) :: vel_01
-    real, dimension(100000000) :: pos_01
-
-    
-    TMAX = 100000.0
+    real :: ini,end
+    real,dimension(2) :: dt
+    real,dimension(3) :: tempo
+    real :: vel
+    real :: pos
+    dt(1)= 0.01
+    dt(2)= 0.001
+   
+    TMAX = 10000.0
     contador=0
     ini=0.00
     end=0.00
     tempo=0.0
-    media=0.0
+  
     i=0
     
-    open(1,file='runtime_massaMola01.csv',status = 'old')
-   
     
-    do i=0,1
-        
+    open(1,file='runtime_massaMola01.csv',status = 'old')
+    open(2,file='resultado_001.csv',status='old')
+    
+    do i=1,2
+    
         j=-1
         x = -1.0
         vx = 0.0
         m = 1.0
         k = 1.0
         t=0.0
-        
+          
         if(i ==0 ) then
-            
-            comparador = TMAX*100
-            CALL CPU_TIME(ini)
-            call rseed()
-                dt=1
+            do r=1,100
+                comparador = TMAX*100
+                CALL CPU_TIME(ini)
+                call rseed()
+                
                 do while(contador==0)
-                    
-                    dvx = -(k/m)*x*dt
+                        
+                    dvx = -(k/m)*x*dt(i)
                     vx = vx+dvx
-                    dx = vx*dt
+                    dx = vx*dt(i)
                     x = x+dx
-                    j = j+1
-                    pos_01(j)=x
-                    vel_01(j)=vx
-                    t = t+dt
                     
+                    pos=x
+                    vel=vx
+                    t = t+1
+                        
                     if(t >= comparador) then
-                        contador = contador+1
                         exit
                     end if
 
                 end do
-            
-            CALL CPU_TIME(end)  
-            
-            tempo = end - ini
-            
-            write(1,*) tempo*1000    !-Milissegundos
-   
-        end if
+                
+                CALL CPU_TIME(end)
+                tempo = end - ini
+                write(1,*) tempo*1000    !-Milissegundos
+
+            end do
         
+        else if (contador==1) then
+            do r=1,100
+                comparador = TMAX*1000
+                CALL CPU_TIME(ini)
+                call rseed()
+                dt=1
+
+                do while(contador==0)
+                        
+                    dvx = -(k/m)*x*dt(i)
+                    vx = vx+dvx
+                    dx = vx*dt(i)
+                    x = x+dx
+                    pos=x
+                    vel=vx
+                    t = t+1
+                        
+                    if(t >= comparador) then
+                        exit
+                    end if
+
+                end do
+                
+                CALL CPU_TIME(end) 
+                tempo = end - ini
+                write(2,*) tempo*1000    !-Milissegundos
+            
+            end do
+        
+        end if
+     
     end do
     close(1)
+    close(2)
 
 contains
 

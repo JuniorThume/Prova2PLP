@@ -1,62 +1,53 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
-#define TMAX 100000.0
+#define TMAX 10000.0
 
 
-void escreve_saida(float *vet, float *vet1, float dtAtual);
+void escreve_saida(float pos, float vel, float dtAtual);
 
 float massa_mola(float dt){
+    
     clock_t time;
-    
-    
-    //int tam_vet = (int)((TMAX/dt)+1);
-    
-    float *vel = (float *) malloc(10552840 * sizeof(float)); 
-    float *pos = (float *) malloc(10552840 * sizeof(float));
-    //printf("%d\n", tam_vet);
-    time = clock();
-    int i=0;
+    float vel,pos;
     float x = -1.0;
     float vx = 0.0;
-    //printf("%ld",sizeof(vel));
     float dx;
     float dvx;
     float t;
     float m = 1.0;
     float k = 1.0;
     t=0.0; 
-    while(t < TMAX){
-        
+    time = clock();
+    for(t=0.0; t < TMAX; t+=dt){
         dvx = -(k/m)*x*dt;
         vx = vx+dvx;
         dx = vx*dt;
         x = x+dx;
-        pos[i]=x;
-        vel[i]=vx;
-        i++;
-        t+=dt;
+        pos=x;
+        vel=vx;
+        
+        //escreve_saida(vel,pos,dt);
     }
     
     time = clock()-time;
-    escreve_saida(vel,pos,dt);
-    free(pos);
-    free(vel);
+    
     time = ((double)time/CLOCKS_PER_SEC)*1000; 
     
     return time;
 }
-void escreve_saida(float *vet, float *vet1, float dtAtual){
+void escreve_saida(float pos, float vel, float dtAtual){
     FILE* arq;
     char *nomeArq;
     if(dtAtual == 0.01f) {
-        arq = fopen("../../../../Resultados-MassaMola/C/runtime_massa_mola-01.csv","wt");
-    } else { 
-        arq = fopen("../../../../Resultados-MassaMola/C/runtime_massa_mola-001.csv","wt");
+        
+        arq = fopen("../../../../Resultados-MassaMola/C/runtime_massa_mola-01.csv","a");
+    } else if(dtAtual == 0.001) { 
+        arq = fopen("../../../../Resultados-MassaMola/C/runtime_massa_mola-001.csv","a");
     }
-    for(int i=0; i < (TMAX/dtAtual); i++){
-        fprintf(arq,"%f %f\n",vet[i],vet1[i]);
-    }
+    
+    fprintf(arq,"%f %f\n",pos,vel);
     fclose(arq);
 }
 
@@ -64,8 +55,23 @@ void escreve_saida(float *vet, float *vet1, float dtAtual){
 int main(){
     FILE* temp;
     float runtime;
-    temp = fopen("runtime-massaMola.txt","wt");
-    runtime = massa_mola(0.01f);
-    fprintf(temp,"Tempo de execucao %f\n", runtime);
-    fclose(temp);
+    float dt[3];
+    int i,j;
+    char name[100];
+    char dt_string[15];
+
+    dt[0]=0.01;
+    dt[1]=0.001;
+
+    for(i=0;i<2;i++){
+        sprintf(dt_string,"%.3f",dt[i]);
+        strcat(strcpy(name,"runtime-massaMola-"),dt_string);
+        strcat(name,".txt");
+        temp = fopen(name,"a");
+        for(j=0;j<100;j++){
+            runtime = massa_mola(dt[i]);
+            fprintf(temp,"%f\n", runtime);
+        }
+        fclose(temp);
+    } 
 }
