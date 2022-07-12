@@ -3,7 +3,7 @@ package massaMola;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
+
 
 public class massa_mola {
     public static void main(String[] args) throws IOException{
@@ -30,12 +30,12 @@ public class massa_mola {
         long tempoTotal001;
         for(i=0; i<100; i=i+1){
             tempoInicial01 = System.currentTimeMillis();
-            mm.executa_massa_mola();
+            mm.executa_massa_mola(dt01);
             tempoFinal01 = System.currentTimeMillis();
             tempoTotal01 = (tempoFinal01 - tempoInicial01);
             
             tempoInicial001 = System.currentTimeMillis();
-            mm.executa_massa_mola(0.001);
+            mm.executa_massa_mola(dt001);
             tempoFinal001 = System.currentTimeMillis();
             tempoTotal001 = (tempoFinal001 - tempoInicial001);
             mm.escreveArquivo(tempoTotal01,tempoTotal001);
@@ -72,7 +72,7 @@ public class massa_mola {
         gravaTeste.close();
 
     }
-    public void executa_massa_mola(float dtAtual) throws IOException{
+    public void executa_massa_mola(float dtAtual){
         float TMAX = 10000.0f;
         float x = -1.0f;
         float vx = 0.0f;
@@ -85,6 +85,7 @@ public class massa_mola {
         float k = 1.0f;
     
         for (t=0.0f; t < TMAX ;t+=dtAtual){
+            
             dvx = -(k/m)*x*dtAtual;
             vx = vx+dvx;
             dx = vx*dtAtual;

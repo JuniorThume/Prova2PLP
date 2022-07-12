@@ -1,14 +1,8 @@
 <?php
 
-function gravarArrays($array1,$array2){
-    for($g = 0;$g < count($array1);$g++){
-        
-        gravar("resultado-massaMola01.csv",$array1[$g] . " " . $array2[$g] . "\n");
-    }
-}
 function gravar($arq,$texto){
 	$fp = fopen($arq, "a+");
-	fwrite($fp, $texto);
+	fwrite($fp, $texto."\n");
 	fclose($fp);
 }
 
@@ -32,7 +26,7 @@ function massa_mola($dt){
     $pos = 0.0;
     $vel = 0.0;
     
-    for($r = 0; $r < $TMAX; $r++){
+    for($r = 0; $r < $TMAX; $r+=$dt){
         $dvx = -($k/$m)*$x*$dt;
         $vx = $vx+$dvx;
         $dx = $vx*$dt;
@@ -41,12 +35,6 @@ function massa_mola($dt){
         $vel = $vx;
         
     }
-   
-    //gravarArrays($vel,$pos);
-    //print_r($pos);
-    //unset($vel);
-    //unset($pos);
-
 }
 
 
@@ -58,13 +46,13 @@ limpaArquivo("runtime-massa_mola001.txt");
         $time_start01 = microtime(true);
         massa_mola(0.01);
         $time_end01 = microtime(true);
-        $totalTime01 = round($time_end01 - $time_start01, 3);
+        $totalTime01 = round($time_end01 - $time_start01, 3)*1000;
         gravar("runtime-massa_mola01.txt",$totalTime01);
 
         $time_start001 = microtime(true);
         massa_mola(0.001);
         $time_end001 = microtime(true);
-        $totalTime001 = round($time_end001 - $time_start001, 3);
+        $totalTime001 = round($time_end001 - $time_start001, 3)*1000;
         gravar("runtime-massa_mola001.txt",$totalTime001);
         
     }

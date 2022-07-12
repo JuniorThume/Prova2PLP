@@ -42,16 +42,16 @@ stream001.once('open', function(fd) {
 
 
 for(i=0; i<100; i+=1){
-    inicio = Date.now();
+    inicio01 = Date.now();
     massa_mola(0.01);
-    fim = Date.now();
-    result = fim - inicio;
+    fim01 = Date.now();
+    result = fim01 - inicio01;
     stream01.write(`${result}\n`);
     
-    inicio = Date.now();
-    massa_mola(0.01);
-    fim = Date.now();
-    result = fim - inicio;
+    inicio001 = Date.now();
+    massa_mola(0.001);
+    fim001 = Date.now();
+    result = fim001 - inicio001;
     stream001.write(`${result}\n`);
 }
 
