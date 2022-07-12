@@ -39,7 +39,7 @@ Você encontrou obstáculos para implementar os algoritmos solicitados em alguma
     - [x] Pascal
     - [x] PHP
     - [x] Python
-    - [ ] Lisp
+    - [x] Lisp
     - [x] Fortran95
     
    - Atividade 2 </br>
