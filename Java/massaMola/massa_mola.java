@@ -21,16 +21,23 @@ public class massa_mola {
         //long tempoTotal001;
 
         mm.limpaArquivo();
+        long tempoInicial01;
+        long tempoFinal01;
+        long tempoTotal01;
+
+        long tempoInicial001;
+        long tempoFinal001;
+        long tempoTotal001;
         for(i=0; i<100; i=i+1){
-            long tempoInicial01 = System.currentTimeMillis();
+            tempoInicial01 = System.currentTimeMillis();
             mm.executa_massa_mola();
-            long tempoFinal01 = System.currentTimeMillis();
-            long tempoTotal01 = (tempoFinal01 - tempoInicial01);
+            tempoFinal01 = System.currentTimeMillis();
+            tempoTotal01 = (tempoFinal01 - tempoInicial01);
             
-            long tempoInicial01 = System.currentTimeMillis();
+            tempoInicial001 = System.currentTimeMillis();
             mm.executa_massa_mola(0.001);
-            long tempoFinal001 = System.currentTimeMillis();
-            long tempoTotal001 = (tempoFinal001 - tempoInicial001);
+            tempoFinal001 = System.currentTimeMillis();
+            tempoTotal001 = (tempoFinal001 - tempoInicial001);
             mm.escreveArquivo(tempoTotal01,tempoTotal001);
         
         }
@@ -83,8 +90,7 @@ public class massa_mola {
             dx = vx*dtAtual;
             x = x+dx;
             pos=x;
-            vel.=vx;
-        }
-        
+            vel=vx;
+        } 
     }
 }
